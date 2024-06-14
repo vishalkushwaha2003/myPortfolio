@@ -1,9 +1,10 @@
 import React from 'react'
+import Main from './main/Main'
 
 function App() {
   return (
-    <div className='bg-red-500'>
-      hii
+    <div>
+      <Main/>
     </div>
   )
 }
