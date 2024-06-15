@@ -3,9 +3,9 @@ import Sidebar from './sidebar/Sidebar'
 
 function Main() {
   return (
-    <div>
+    <main>
        <Sidebar/>
-    </div>
+    </main>
   )
 }
 

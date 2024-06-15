@@ -1,4 +1,5 @@
 import React from 'react'
+import myPhoto from '../../assets/images/avatar-1.png'
 
 function Sidebar() {
   return (
@@ -7,7 +8,7 @@ function Sidebar() {
     <div class="sidebar-info">
 
       <figure class="avatar-box">
-        <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80"/>
+        <img src={myPhoto} alt="Richard hanrick" width="80"/>
       </figure>
 
       <div class="info-content">
