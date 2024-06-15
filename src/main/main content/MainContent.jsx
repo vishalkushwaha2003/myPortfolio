@@ -1,14 +1,16 @@
 import React from 'react'
+import Navbar from './Navbar'
+import About from './About'
 
 function MainContent() {
   return (
     <div clsaa='main-content'>
       <Navbar/>
       <About/>
-      <Resume/>
+      {/* <Resume/>
       <Portfolio/>
       <Blog/>
-      <Contact/>
+      <Contact/> */}
     </div>
   )
 }

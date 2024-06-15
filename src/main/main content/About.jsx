@@ -1,4 +1,23 @@
 import React from 'react'
+import icon1 from '../../assets/images/icon-design.svg'
+import icon2 from '../../assets/images/icon-dev.svg'
+import icon3 from '../../assets/images/icon-app.svg'
+import icon4 from '../../assets/images/icon-photo.svg'
+import icon5 from '../../assets/images/avatar-1.png'
+import icon6 from '../../assets/images/avatar-2.png'
+import icon7 from '../../assets/images/avatar-3.png'
+import icon8 from '../../assets/images/avatar-1.png'
+import icon9 from '../../assets/images/avatar-1.png'
+import icon10 from '../../assets/images/project-1.jpg'
+import icon11 from '../../assets/images/project-1.jpg'
+import icon12 from '../../assets/images/project-1.jpg'
+import icon13 from '../../assets/images/project-1.jpg'
+import icon14 from '../../assets/images/project-1.jpg'
+import icon15 from '../../assets/images/project-1.jpg'
+import icon16 from '../../assets/images/project-1.jpg'
+
+
+
 
 function About() {
   return (
@@ -25,9 +44,9 @@ function About() {
         </section>
 
 
-        <!--
+        {/* <!--
           - service
-        -->
+        --> */}
 
         <section class="service">
 
@@ -38,8 +57,7 @@ function About() {
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src={icon1} alt="design icon" width="40"/>
               </div>
 
               <div class="service-content-box">
@@ -55,7 +73,7 @@ function About() {
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src={icon2} alt="Web development icon" width="40"/>
               </div>
 
               <div class="service-content-box">
@@ -71,7 +89,7 @@ function About() {
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src={icon3} alt="mobile app icon" width="40"/>
               </div>
 
               <div class="service-content-box">
@@ -87,7 +105,7 @@ function About() {
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src={icon4} alt="camera icon" width="40"/>
               </div>
 
               <div class="service-content-box">
@@ -105,9 +123,9 @@ function About() {
         </section>
 
 
-        <!--
+        {/* <!--
           - testimonials
-        -->
+        --> */}
 
         <section class="testimonials">
 
@@ -119,7 +137,7 @@ function About() {
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  <img src={icon5} alt="Daniel lewis" width="60" data-testimonials-avatar/>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
@@ -141,7 +159,7 @@ function About() {
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                  <img src={icon6} alt="Jessica miller" width="60" data-testimonials-avatar />
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
@@ -163,7 +181,7 @@ function About() {
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                  <img src={icon7} alt="Emily evans" width="60" data-testimonials-avatar />
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
@@ -185,7 +203,7 @@ function About() {
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  <img src={icon8} alt="Henry william" width="60" data-testimonials-avatar />
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
@@ -208,9 +226,9 @@ function About() {
         </section>
 
 
-        <!--
+        {/* <!--
           - testimonials modal
-        -->
+        --> */}
 
         <div class="modal-container" data-modal-container>
 
@@ -224,10 +242,10 @@ function About() {
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src={icon9} alt="Daniel lewis" width="80" data-modal-img />
               </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              <img src={icon10} alt="quote icon"/>
             </div>
 
             <div class="modal-content">
@@ -252,10 +270,10 @@ function About() {
 
         </div>
 
-
+{/* 
         <!--
           - clients
-        -->
+        --> */}
 
         <section class="clients">
 
@@ -265,37 +283,37 @@ function About() {
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
+                <img src={icon11} alt="client logo"/>
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
+                <img src={icon12} alt="client logo"/>
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
+                <img src={icon13} alt="client logo"/>
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
+                <img src={icon14} alt="client logo"/>
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
+                <img src={icon15} alt="client logo"/>
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
+                <img src={icon16} alt="client logo"/>
               </a>
             </li>
 
