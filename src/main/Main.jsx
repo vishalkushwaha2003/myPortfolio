@@ -5,6 +5,7 @@ function Main() {
   return (
     <main>
        <Sidebar/>
+       <MainContent/>
     </main>
   )
 }
