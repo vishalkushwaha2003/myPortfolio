@@ -3,7 +3,7 @@ import myPhoto from '../../assets/images/avatar-1.png'
 
 function Sidebar() {
   return (
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar data-sidebar" >
 
     <div class="sidebar-info">
 
@@ -17,7 +17,7 @@ function Sidebar() {
         <p class="title">Web developer</p>
       </div>
 
-      <button class="info_more-btn" data-sidebar-btn>
+      <button class="info_more-btn data-sidebar-btn" >
         <span>Show Contacts</span>
 
         <ion-icon name="chevron-down"></ion-icon>

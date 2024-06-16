@@ -1,36 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-function Navbar() {
+function Navbar({ setActiveComponent }) {
   return (
-    <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-  )
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li className="navbar-item">
+          <button className="navbar-link" onClick={() => setActiveComponent('About')}>About</button>
+        </li>
+        <li className="navbar-item">
+          <button className="navbar-link" onClick={() => setActiveComponent('Resume')}>Resume</button>
+        </li>
+        <li className="navbar-item">
+          <button className="navbar-link" onClick={() => setActiveComponent('Portfolio')}>Portfolio</button>
+        </li>
+        <li className="navbar-item">
+          <button className="navbar-link" onClick={() => setActiveComponent('Blog')}>Blog</button>
+        </li>
+        <li className="navbar-item">
+          <button className="navbar-link" onClick={() => setActiveComponent('Contact')}>Contact</button>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
