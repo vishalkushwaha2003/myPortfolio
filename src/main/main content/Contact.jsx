@@ -31,7 +31,7 @@ function Contact() {
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn button-animation" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+              {/* <ion-icon name="paper-plane"></ion-icon> */}
               <span >Send Message</span>
             </button>
 

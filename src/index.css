@@ -314,7 +314,7 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
-.sidebar {
+/* .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
@@ -444,7 +444,7 @@ main {
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link:hover { color: var(--light-gray); } */
 
 
 
@@ -1916,7 +1916,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .button-animation:hover {
   background: rgb(61, 106, 255);
-  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  box-shadow: 0 0 15px 3px rgba(0, 142, 236, 0.815); /* Reduced blur radius */
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1938,7 +1938,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   left: 0%;
   opacity: 0;
   background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
+  box-shadow: 0 0 25px 15px #fff; /* Reduced blur radius */
   -webkit-transform: skewX(-20deg);
   -moz-transform: skewX(-20deg);
   -ms-transform: skewX(-20deg);
