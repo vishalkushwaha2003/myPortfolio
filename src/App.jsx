@@ -1,10 +1,10 @@
 import React from 'react'
-import Main from './main/Main'
+import MainContent from './main/main content/MainContent'
 
 function App() {
   return (
-    <div>
-      <Main/>
+    <div className= 'h-screen w-screen p-10'>
+      <MainContent/>
     </div>
   )
 }
