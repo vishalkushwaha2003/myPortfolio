@@ -1,25 +1,27 @@
 import React from 'react';
+import Button from './Button';
 
 function Navbar({ setActiveComponent }) {
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">
-        <li className="navbar-item">
-          <button className="navbar-link button-animation" onClick={() => setActiveComponent('About')}>About</button>
-        </li>
-        <li className="navbar-item">
-          <button className="navbar-link button-animation" onClick={() => setActiveComponent('Resume')}>Resume</button>
-        </li>
-        <li className="navbar-item">
-          <button className="navbar-link button-animation" onClick={() => setActiveComponent('Portfolio')}>Portfolio</button>
-        </li>
-        <li className="navbar-item">
-          <button className="navbar-link button-animation" onClick={() => setActiveComponent('Blog')}>Blog</button>
-        </li>
-        <li className="navbar-item">
-          <button className="navbar-link button-animation" onClick={() => setActiveComponent('Contact')}>Contact</button>
-        </li>
-      </ul>
+    <nav className="flex justify-center space-x-5 pt-2 items-center border-spacing-1">
+      
+     
+        
+          <button className="buttonNav" onClick={() => setActiveComponent('About')}>About</button>
+       
+        
+          <button className="buttonNav" onClick={() => setActiveComponent('Resume')}>Resume</button>
+       
+        
+          <button className="buttonNav" onClick={() => setActiveComponent('Portfolio')}>Portfolio</button>
+        
+        
+          <button className="buttonNav" onClick={() => setActiveComponent('Blog')}>Blog</button>
+        
+        
+          <button className="buttonNav" onClick={() => setActiveComponent('Contact')}>Contact</button>
+        
+      
     </nav>
   );
 }
