@@ -29,10 +29,10 @@ function PhotoSection() {
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container flex justify-around w-full">
-                 <InstagramIcon fontSize='large'/>
-                 <GitHubIcon fontSize='large'/>
-                 <FaLinkedinIn className='w-[20px]'/>
-                 <WhatsAppIcon fontSize='large'/>
+                 <InstagramIcon fontSize='large' className='hover:cursor-pointer'/>
+                 <GitHubIcon fontSize='large'className='hover:cursor-pointer' />
+                 <FaLinkedinIn className='w-[20px] hover:cursor-pointer'/>
+                 <WhatsAppIcon fontSize='large' className='hover:cursor-pointer'/>
             </div>
             
            </div>
