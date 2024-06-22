@@ -24,8 +24,8 @@ function PhotoSection() {
         </div>
         <div className="bottom">
             <div className="content">
-                <span className="name">My Name</span>
-                <span className="about-me">Lorem ipsum dolor sit amet consectetur adipisicinFcls </span>
+                <span className="name">VISHAL KUSHWAHA</span>
+                <span className="about-me">fronted developer</span>
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container flex justify-around w-full">
