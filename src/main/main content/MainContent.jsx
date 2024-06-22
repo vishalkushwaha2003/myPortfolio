@@ -29,7 +29,7 @@ function MainContent() {
   // };
 
   return (
-    <div className='w-full h-full flex  rounded-[30px] bg-[#0e0c0c] shadow-[15px_15px_30px_rgb(25,25,25),-15px_-15px_30px_rgb(60,60,60)] '>
+    <div className='w-full h-full flex space-x-5 rounded-[30px] bg-[#0e0c0c] shadow-[0px_0px_30px_20px_rgb(25,25,25)] p-5'>
       
       
       <PhotoSection />
