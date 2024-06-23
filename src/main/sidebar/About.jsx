@@ -1,5 +1,6 @@
 import React from 'react'
 import Divider from '@mui/material/Divider';
+import AboutCard from './AboutCard';
 
 
 function About() {
@@ -17,7 +18,10 @@ function About() {
           }}/>
           <div className='text-[30px] font-bold text-[rgba(255,255,255,0.8)] '>
             What I'm Doing
-            </div>     
+            </div> 
+            <div>
+              <AboutCard/>
+              </div>    
     </div>
   )
 }
