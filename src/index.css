@@ -530,7 +530,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fbb9b6;
+  color: rgb(251, 185, 182);
   border-radius: 5px;
   padding-left: 15px;
   
@@ -548,3 +548,10 @@ body {
 .container .glass:hover>img{
   opacity: 0;
 }
+
+
+
+
+
+/* tip css********************************************************************************** */
+
