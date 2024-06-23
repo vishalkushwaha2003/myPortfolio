@@ -530,16 +530,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #fbb9b6;
   border-radius: 5px;
-  font-weight: bold;
+  padding-left: 20px;
   top: 100%;
   transition: all .3s cubic-bezier(.6,.4,0,1);
 }
 
 .container .glass:hover> span {
-  top: 0;
-  font-size: 1.2em;
+  top: -20px;
+  font-size: 1.1em;
 }
 
 
