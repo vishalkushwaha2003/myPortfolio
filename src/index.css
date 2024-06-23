@@ -473,7 +473,7 @@ body {
   align-items: center;
   color: #fff;
 }
-.container .glass svg {
+.container .glass img {
   font-size: 2.5em;
   fill: #fff;
 }
@@ -544,6 +544,6 @@ body {
 
 
 
-.container .glass:hover>svg{
+.container .glass:hover>img{
   opacity: 0;
 }
