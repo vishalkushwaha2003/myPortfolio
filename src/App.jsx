@@ -3,7 +3,7 @@ import MainContent from './main/main content/MainContent'
 
 function App() {
   return (
-    <div className= 'h-screen w-screen p-10'>
+    <div className= 'h-screen w-screen'>
       <MainContent/>
     </div>
   )
