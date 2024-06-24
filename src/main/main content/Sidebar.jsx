@@ -31,7 +31,7 @@ function Sidebar() {
         <Navbar setActiveComponent={setActiveComponent} />
         {renderComponent()}
       </div>
-    </div>
+    </div> 
   );
 }
 
