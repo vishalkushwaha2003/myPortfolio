@@ -1,11 +1,11 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip } from 'chart.js';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
 const BarChart = () => {
-  const labels = ['mm','mm','mm','mm','mm','mm','mm',]; // Adjust this to your actual utility for getting months
+  const labels = ['mm', 'mm', 'mm', 'mm', 'mm', 'mm', 'mm'];
   const data = {
     labels: labels,
     datasets: [{
@@ -36,7 +36,26 @@ const BarChart = () => {
   const options = {
     scales: {
       y: {
-        beginAtZero: true
+        beginAtZero: true,
+        grid: {
+          color: 'white', // Grid line color
+        },
+        ticks: {
+          color: 'white', // Y-axis label color
+        }
+      },
+      x: {
+        grid: {
+          color: 'white', // Grid line color
+        },
+        ticks: {
+          color: 'white', // X-axis label color
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        display: false // Disable legend
       }
     }
   };
