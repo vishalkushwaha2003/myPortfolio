@@ -5,7 +5,7 @@ import ResumeBackdrop from "./ResumeBackdrop";
 
 function Resume() {
   return (
-    <div className="w-full h-full px-5 py-2 grid grid-cols-2 grid-rows-12 gap-1">
+    <div className="w-full h-full px-5 pb-3 grid grid-cols-2 grid-rows-12 gap-1">
       <div className="col-span-1 row-span-10  flex items-center justify-center">
         <Timeliner />
       </div>

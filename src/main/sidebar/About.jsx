@@ -4,10 +4,10 @@ import AboutCard from "./AboutCard";
 
 function About() {
   return (
-    <div className="grid grid-cols-12 grid-rows-12 gap-1">
-      <div className="col-span-12 row-span-6 flex flex-col px-10 space-y-4  ">
+    <div className="h-full w-full grid grid-cols-12 grid-rows-12 gap-1">
+      <div className="h-fll w-full col-span-12 row-span-6 flex flex-col px-10 justify-center items-center  space-y-2 py-2  ">
        
-      <div className="flex flex-col ">
+      <div className="flex flex-col space-y-2 ">
         <div className="text-[30px] font-bold text-[rgba(255,255,255,0.8)] animate__animated animate__bounceInDown">
           About me
         </div>
@@ -30,7 +30,7 @@ function About() {
       </div>
 
       </div>
-      <div className=" col-span-12 row-span-6 flex justify-center items-center ">
+      <div className=" col-span-12 row-span-6 flex justify-center items-center  ">
         <AboutCard />
       </div>
     </div>
