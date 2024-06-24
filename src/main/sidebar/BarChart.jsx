@@ -5,31 +5,23 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip } fro
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
 const BarChart = () => {
-  const labels = ['mm', 'mm', 'mm', 'mm', 'mm', 'mm', 'mm'];
+  const labels = ['web Design', 'web Dev.', 'chrome Ext.', 'DSA', 'AWS'];
   const data = {
     labels: labels,
     datasets: [{
-      label: 'My First Dataset',
-      data: [65, 59, 80, 81, 56, 55, 40],
+      
+      data: [70, 80, 40, 60, 30],
       backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(255, 159, 64, 0.2)',
-        'rgba(255, 205, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(201, 203, 207, 0.2)'
+        'rgb(251, 185, 182,0.2)',
+        
+      
       ],
       borderColor: [
-        'rgb(255, 99, 132)',
-        'rgb(255, 159, 64)',
-        'rgb(255, 205, 86)',
-        'rgb(75, 192, 192)',
-        'rgb(54, 162, 235)',
-        'rgb(153, 102, 255)',
-        'rgb(201, 203, 207)'
+        'rgb(251, 185, 182)',
+        
+        
       ],
-      borderWidth: 1
+      borderWidth: 1,
     }]
   };
 
@@ -38,7 +30,7 @@ const BarChart = () => {
       y: {
         beginAtZero: true,
         grid: {
-          color: 'white', // Grid line color
+          color: 'rgba(255,255,255,0.2)', // Grid line color
         },
         ticks: {
           color: 'white', // Y-axis label color
@@ -46,7 +38,7 @@ const BarChart = () => {
       },
       x: {
         grid: {
-          color: 'white', // Grid line color
+          color: 'rgba(255,255,255,0.1)', // Grid line color
         },
         ticks: {
           color: 'white', // X-axis label color
@@ -55,7 +47,7 @@ const BarChart = () => {
     },
     plugins: {
       legend: {
-        display: false // Disable legend
+        display: false 
       }
     }
   };

@@ -56,7 +56,7 @@ body {
   left: 3px;
   border-radius: 29px;
   z-index: 1;
-  border: 1px solid #fbb9b6;
+  border: 1px solid rgb(251, 185, 182);
   overflow: hidden;
   transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
 }
