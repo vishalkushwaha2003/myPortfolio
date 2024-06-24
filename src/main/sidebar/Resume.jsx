@@ -1,6 +1,7 @@
 import React from "react";
 import Timeliner from "./Timeliner";
 import BarChart from "./BarChart";
+import ResumeBackdrop from "./ResumeBackdrop";
 
 function Resume() {
   return (
@@ -13,7 +14,8 @@ function Resume() {
         <BarChart />
       </div>
       <div className="col-span-2 row-span-2  flex justify-center items-center">
-        <button className="resumeButton">See Full Resume</button>
+        {/* <button className="resumeButton">See Full Resume</button> */}
+        <ResumeBackdrop/>
       </div>
     </div>
   );
