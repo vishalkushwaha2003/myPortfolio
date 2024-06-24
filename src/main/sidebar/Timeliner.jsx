@@ -7,7 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import Tip from './Tip';
+
 import Tooltip from '@mui/material/Tooltip';
 
 export default function Timeliner() {
