@@ -22,10 +22,12 @@ export default function Timeliner() {
           }}/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{
+        <TimelineContent className='animate__animated animate__bounceIn'
+         sx={{
           color:'rgba(255,255,255)',
           fontSize:'20px',
           fontWeight:'500'
+          
         }}>Education</TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -37,7 +39,8 @@ export default function Timeliner() {
           {/* <Tip/> */}
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{
+        <TimelineContent  className='animate__animated animate__bounceIn'
+        sx={{
           color:'rgba(255,255,255,0.9)',
           fontSize:'18px',
           fontWeight:'400',
@@ -55,7 +58,8 @@ export default function Timeliner() {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{
+        <TimelineContent className='animate__animated animate__bounceIn'
+        sx={{
           color:'rgba(255,255,255,0.9)',
           fontSize:'18px',
           fontWeight:'400',
@@ -73,7 +77,8 @@ export default function Timeliner() {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{
+        <TimelineContent className='animate__animated animate__bounceIn'
+        sx={{
            color:'rgba(255,255,255,0.9)',
            fontSize:'18px',
            fontWeight:'400',
