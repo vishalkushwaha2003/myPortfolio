@@ -3,7 +3,7 @@ import Button from './Button';
 
 function Navbar({ setActiveComponent }) {
   return (
-    <nav className="flex justify-center space-x-5 pt-3 items-center border-spacing-1">
+    <nav className="flex justify-center space-x-5  items-center ">
       
      
         
