@@ -5,7 +5,7 @@ import AboutCard from "./AboutCard";
 function About() {
   return (
     <div className="grid grid-cols-12 grid-rows-12 gap-1">
-      <div className="col-span-12 row-span-6 flex flex-col px-10 space-y-2  ">
+      <div className="col-span-12 row-span-6 flex flex-col px-10 space-y-4  ">
        
       <div className="flex flex-col ">
         <div className="text-[30px] font-bold text-[rgba(255,255,255,0.8)] animate__animated animate__bounceInDown">
