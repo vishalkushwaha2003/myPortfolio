@@ -607,8 +607,8 @@ body {
 /* portfolioChard css**************************************************************************** */
 
 .parent {
-  max-width: 290px;
-  height: 300px;
+  width: 200px;
+  height: 250px;
   perspective: 1000px;
 }
 
@@ -618,7 +618,7 @@ body {
   background: linear-gradient(135deg, #fbb9b66f 0%, #ee635c9b 100%);
   transition: all 0.5s ease-in-out;
   transform-style: preserve-3d;
-  box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+  box-shadow: rgba(81, 63, 63, 0) 40px 50px 25px -40px, rgba(40, 30, 30, 0.2) 0px 25px 25px -5px;
 }
 
 .glass1 {
@@ -628,8 +628,8 @@ body {
   border-radius: 55px;
   border-top-right-radius: 100%;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.096) 0%, rgba(255, 255, 255, 0.51) 100%);
-  /* -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px); */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   transform: translate3d(0px, 0px, 25px);
   border-left: 1px solid rgba(255, 255, 255, 0.537);
   border-bottom: 1px solid rgba(255, 255, 255, 0.519);
@@ -643,7 +643,7 @@ body {
 
 .content1 .title {
   display: block;
-  color: #00894d;
+  color: #f3f3f3;
   font-weight: 900;
   font-size: 20px;
 }
@@ -731,7 +731,7 @@ body {
 }
 
 .bottom .social-buttons-container .social-button:hover {
-  background: black;
+  background: rgb(219, 215, 215);
 }
 
 .bottom .social-buttons-container .social-button:hover .svg {
@@ -739,11 +739,11 @@ body {
 }
 
 .bottom .social-buttons-container .social-button:active {
-  background: rgb(255, 234, 0);
+  background: rgb(237, 97, 55);
 }
 
 .bottom .social-buttons-container .social-button:active .svg {
-  fill: black;
+  fill: rgb(230, 142, 132);
 }
 
 /* .logo {
@@ -817,12 +817,12 @@ body {
 
 .parent:hover .card1 {
   transform: rotate3d(1, 1, 0, 30deg);
-  box-shadow: rgba(171, 153, 153, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+  box-shadow: rgba(239, 147, 147, 0.212) 30px 50px 25px -40px, rgba(211, 211, 211, 0.138) 0px 25px 30px 0px;
 }
 
 .parent:hover .card1 .bottom .social-buttons-container .social-button {
   transform: translate3d(0, 0, 50px);
-  box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
+  box-shadow: rgba(145, 152, 146, 0.243) -5px 20px 10px 0px;
 }
 
 .parent:hover .card1 .logo .circle2 {
