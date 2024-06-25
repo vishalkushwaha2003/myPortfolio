@@ -558,7 +558,7 @@ body {
   width: 15em;
   position: relative;
   height: 2.5em;
-  border: 3px ridge #fbb9b6;
+  border: 1px ridge #fbb9b6;
   outline: none;
   background-color: transparent;
   color: white;
