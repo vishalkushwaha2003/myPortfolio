@@ -16,8 +16,8 @@ function PortfolioChard({data}) {
             
             <div class="social-buttons-container">
                <GitHubIcon fontSize={'medium'} className="social-button .social-button1 hover:cursor-pointer"/>
-               <GitHubIcon fontSize={'large'} className="social-button .social-button2 hover:cursor-pointer"/>
-               <GitHubIcon fontSize={'large'} className="social-button .social-button3 hover:cursor-pointer"/>
+               <FaLinkedinIn  className="social-button .social-button2 hover:cursor-pointer h-6"/>
+               <ExpandCircleDownIcon fontSize={'medium'} className="social-button .social-button3 hover:cursor-pointer"/>
             </div>
             
         </div>

@@ -702,15 +702,14 @@ body {
 }
 
 .bottom .social-buttons-container .social-button {
-  width: 30px;
+  width: 40px;
   aspect-ratio: 1;
-  padding: 5px;
-  background: rgb(255, 255, 255);
+  
   border-radius: 50%;
   border: none;
   display: grid;
   place-content: center;
-  box-shadow: #fbb9b6 0px 7px 5px -5px;
+  box-shadow: #0b0b0b 0px 7px 5px -5px;
 }
 
 .bottom .social-buttons-container .social-button:first-child {
@@ -727,19 +726,17 @@ body {
 
 .bottom .social-buttons-container .social-button .svg {
   width: 15px;
-  fill: #fbb9b6;
+  fill: #1c1919;
 }
 
-.bottom .social-buttons-container .social-button:hover {
-  background: rgb(219, 215, 215);
-}
 
-.bottom .social-buttons-container .social-button:hover .svg {
-  fill: white;
-}
+
+/* .bottom .social-buttons-container .social-button:hover .svg {
+  fill: rgb(19, 17, 17);
+} */
 
 .bottom .social-buttons-container .social-button:active {
-  background: rgb(237, 97, 55);
+  background: rgb(230, 142, 132);
 }
 
 .bottom .social-buttons-container .social-button:active .svg {
@@ -822,9 +819,9 @@ body {
 
 .parent:hover .card1 .bottom .social-buttons-container .social-button {
   transform: translate3d(0, 0, 50px);
-  box-shadow: rgba(145, 152, 146, 0.243) -5px 20px 10px 0px;
+  box-shadow: rgba(3, 3, 3, 0.459) -5px 20px 10px 0px;
 }
-
+/* 
 .parent:hover .card1 .logo .circle2 {
   transform: translate3d(0, 0, 60px);
 }
@@ -839,4 +836,4 @@ body {
 
 .parent:hover .card1 .logo .circle5 {
   transform: translate3d(0, 0, 120px);
-}
+} */
