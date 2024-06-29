@@ -1,5 +1,6 @@
 // src/FetchData.js
 import React, { useState, useEffect } from 'react';
+import Skeleton from './SkeletonLoading';
 
 const LeetcodeData = () => {
   const [data, setData] = useState(null);
@@ -27,8 +28,8 @@ const LeetcodeData = () => {
 
   console.log(data)
 
-  if (loading) {
-    return <div>Loading...</div>;
+  if (true) {
+    return <div className='col-span-1 row-span-1 '><Skeleton/></div>;
   }
 
   if (error) {
@@ -37,7 +38,7 @@ const LeetcodeData = () => {
 
   return (
     <div className='grid grid-cols-1 grid-rows-3 w-full'>
-        {data && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1'>
+        {false && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1'>
              <div className='col-span-3 row-span-1'>
                  
              </div>
