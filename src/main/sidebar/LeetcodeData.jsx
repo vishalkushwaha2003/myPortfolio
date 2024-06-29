@@ -1,6 +1,7 @@
 // src/FetchData.js
 import React, { useState, useEffect } from 'react';
 import Skeleton from './SkeletonLoading';
+import RepoInfo from './RepoInfo';
 
 const LeetcodeData = () => {
   const [data, setData] = useState(null);
@@ -53,7 +54,7 @@ const LeetcodeData = () => {
 
              </div>
              <div className='col-span-2 row-span-1 bg-red-600'>
-                   
+                 <RepoInfo repos={data.public_rpos}/>  
              </div>
         
         </div>}
