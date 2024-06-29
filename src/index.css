@@ -215,15 +215,16 @@ body {
   transition: all .2s;
  }
  
- .sideCard2:hover {
-  transform: scale(0.998);
+  .sideCard2:hover {
+  /* transform: scale(1.002); */
+  
   border-radius: 20px;
  }
  
  
 
  /* InstaIcon ***************************************************************/
-
+/* 
  .tooltip-container {
   position: relative;
   cursor: pointer;
@@ -366,7 +367,7 @@ body {
 .about {
   color: #ccc;
   padding-top: 5px;
-}
+} */
 
 
 
