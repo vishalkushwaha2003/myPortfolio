@@ -6,7 +6,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 
 
-const LeetcodeData = () => {
+const GitHub = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -72,4 +72,4 @@ const LeetcodeData = () => {
   );
 };
 
-export default LeetcodeData;
+export default GitHub;
