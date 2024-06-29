@@ -5,8 +5,8 @@ const RepoInfo = ({repos}) => {
 
   useEffect(() => {
     let start = 0;
-    const end = 13;
-    const duration = 1000; // Duration of the animation in ms
+    const end =repos;
+    const duration = 1200; // Duration of the animation in ms
     const incrementTime = duration / end;
 
     const timer = setInterval(() => {
@@ -19,11 +19,11 @@ const RepoInfo = ({repos}) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center p-4">
-      <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl">
+    <div className="flex flex-col items-center justify-center  h-full w-full p-4">
+      <div className="w-16 h-16 bg-[#fbb9b67b] rounded-full border-[1px] flex items-center justify-center text-white text-2xl font-bold">
         {count}
       </div>
-      <div className="mt-2 text-lg">Repo</div>
+      <div className="text-gray-400 text-md">Repos</div>
     </div>
   );
 };

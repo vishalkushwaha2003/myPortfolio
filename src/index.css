@@ -40,7 +40,7 @@ body {
 }
 
 .card .mail svg {
-  stroke: #fbb9b6;
+  stroke: rgb(251, 185, 182);
   stroke-width: 3px;
 }
 
