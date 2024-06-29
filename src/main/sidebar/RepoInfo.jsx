@@ -6,7 +6,7 @@ const RepoInfo = ({repos}) => {
   useEffect(() => {
     let start = 0;
     const end =repos;
-    const duration = 1200; // Duration of the animation in ms
+    const duration = 1500; // Duration of the animation in ms
     const incrementTime = duration / end;
 
     const timer = setInterval(() => {
@@ -19,7 +19,7 @@ const RepoInfo = ({repos}) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center  h-full w-full p-4">
+    <div className="flex flex-col items-center justify-center  h-full w-full p-4 animate__animated animate__fadeInRight">
       <div className="w-16 h-16 bg-[#fbb9b67b] rounded-full border-[1px] flex items-center justify-center text-white text-2xl font-bold">
         {count}
       </div>

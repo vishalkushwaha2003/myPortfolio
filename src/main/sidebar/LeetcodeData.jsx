@@ -42,21 +42,21 @@ const LeetcodeData = () => {
 
   return (
     <div className='grid grid-cols-1 grid-rows-3 w-full px-5 h-full overflow-y-scroll'>
-        {data && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1 w-[80%] rounded-lg border-[0.1px]'>
-             <div className='col-span-3 row-span-1  flex justify-center items-center p-5'>
-                    <img src={data.avatar_url} alt="avatar" className='h-[100%] rounded-full' />
+        {data && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1 w-[80%] rounded-lg border-[0.5px] animate__animated animate__zoomIn animate__faster'>
+             <div className='col-span-3 row-span-1  flex justify-center items-center p-5 overflow-hidden'>
+                    <img src={data.avatar_url} alt="avatar" className='h-[100%] rounded-full animate__animated animate__fadeInRight' />
              </div>
-             <div className='col-span-7 row-span-1  flex flex-col justify-center items-center'>
-                   <div className='text-[25px] font-bold text-white'>{data.name}</div>
-                   <div className='text-[15px] text-gray-400'>{data.login}</div>
-                   <div className='flex gap-3'>
+             <div className='col-span-7 row-span-1  flex flex-col justify-center items-center overflow-hidden '>
+                   <div className='text-[25px] font-bold text-white animate__animated animate__fadeInLeft'>{data.name}</div>
+                   <div className='text-[15px] text-gray-400 animate__animated animate__fadeInLeft'>{data.login}</div>
+                   <div className='flex gap-3 animate__animated animate__fadeInLeft'>
                    <div className='text-[15px] text-gray-400'> <GroupOutlinedIcon/> followers { data.followers} ,</div>
                    <div className='text-[15px] text-gray-400'>following { data.following}</div>
                    </div>
-                   <div className='text-[15px] text-gray-400'><EmailOutlinedIcon/> vishalkushwaha2003@gmail.com</div>
+                   <div className='text-[15px] text-gray-400 animate__animated animate__fadeInLeft'><EmailOutlinedIcon/> vishalkushwaha2003@gmail.com</div>
 
              </div>
-             <div className='col-span-2 row-span-1 '>
+             <div className='col-span-2 row-span-1 overflow-hidden '>
                  <RepoInfo repos={data.public_repos}/>  
              </div>
         
