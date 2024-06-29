@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 import All from './All';
 import WebDevelopment from './WebDevelopment';
 import ChromeExtension from './ChromeExtension';
+import LeetcodeData from './LeetcodeData';
 
 function Portfolio() {
   const [activeSection, setActiveSection] = useState('All');
@@ -15,6 +16,8 @@ function Portfolio() {
         return <WebDevelopment/>;
       case 'Chrome Extension':
         return <ChromeExtension/>;
+      case 'Leetcode':
+        return <LeetcodeData/>;
       default:
         return <All/>;
     }
@@ -55,6 +58,17 @@ function Portfolio() {
           onClick={() => setActiveSection('Chrome Extension')}
         >
           Chrome Extension
+        </Button>
+        <Button 
+          variant='text' 
+          size='small' 
+          sx={{ 
+            color: 'whitesmoke', 
+            padding: '5px 15px' 
+          }} 
+          onClick={() => setActiveSection('Leetcode')}
+        >
+          Leetcode
         </Button>
       </div>
       <div className='col-span-12 row-span-11 '>
