@@ -47,7 +47,7 @@ const GitHubRepoAnalysis = () => {
   };
 
   return (
-    <div className='w-[80%] mx-auto ' style={{ height: '400px' }} > {/* Set the height of the chart container */}
+    <div className='w-[80%]  p-2'  > {/* Set the height of the chart container */}
       <Bar data={data} options={options} />
     </div>
   );

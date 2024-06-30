@@ -210,7 +210,7 @@ body {
  
  .sideCard2 {
  
-  background-color: #1a1a1a;
+  background-color: rgb(26, 26, 26);
   border-radius:20px;
   transition: all .2s;
  }
