@@ -66,8 +66,8 @@ const GitHub = () => {
         <div className='col-span-1 row-span-1  p-[2px] rounded-[5px] overflow-scroll'>
         <GitHubActivityBox/>
         </div>
-        <div className='col-span-1  w-full flex flex-col justify-start items-center'>
-          <div className='text-[15px] text-gray-400 '>Repos %</div>
+        <div className=' w-full h-full  '>
+          
           <GitHubRepoAnalysis/>
         </div>
       

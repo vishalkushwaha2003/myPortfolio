@@ -10,7 +10,7 @@ const GitHubRepoAnalysis = () => {
     labels: labels,
     datasets: [{
       data: [70, 80, 40, 60, 30, 60, 30, 10, 70, 50, 46, 20],
-      backgroundColor: 'rgb(251, 185, 182,0.2)',
+      backgroundColor: 'rgb(251, 185, 182,0.3)',
       borderColor: 'rgb(251, 185, 182)',
       borderWidth: 0,
       barThickness: 10, // Set the thickness of each bar
@@ -19,6 +19,8 @@ const GitHubRepoAnalysis = () => {
   };
 
   const options = {
+    responsive: true, // Ensure responsiveness
+    maintainAspectRatio: false, // Disable maintaining aspect ratio
     indexAxis: 'y', // Swap the axes to make bars horizontal
     scales: {
       x: {
@@ -43,11 +45,22 @@ const GitHubRepoAnalysis = () => {
       legend: {
         display: false 
       }
+    },
+    onHover: (event, chartElement) => {
+      if (chartElement.length) {
+        event.native.target.style.cursor = 'pointer';
+      } else {
+        event.native.target.style.cursor = 'default';
+      }
     }
   };
 
+  // Calculate the height based on the number of labels
+  const chartHeight = labels.length * 30; // Adjust this multiplier to fit your needs
+
   return (
-    <div className='w-[80%]  p-2'  > {/* Set the height of the chart container */}
+    <div className='w-[80%] mx-auto  flex flex-col items-center' style={{ height: chartHeight }}>
+      <div className='text-[15px] text-gray-400'>Repos %</div>
       <Bar data={data} options={options} />
     </div>
   );
