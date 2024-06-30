@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-const RepoInfo = ({repos}) => {
+const RepoInfo = ({number,label}) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     let start = 0;
-    const end =repos;
+    const end =number;
     const duration = 1500; // Duration of the animation in ms
     const incrementTime = duration / end;
 
@@ -23,7 +23,7 @@ const RepoInfo = ({repos}) => {
       <div className="w-16 h-16 bg-[#fbb9b67b] rounded-full border-[1px] flex items-center justify-center text-white text-2xl font-bold">
         {count}
       </div>
-      <div className="text-gray-400 text-md">Repos</div>
+      <div className="text-gray-400 text-md">{label}</div>
     </div>
   );
 };

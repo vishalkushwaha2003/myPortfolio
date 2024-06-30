@@ -61,7 +61,7 @@ const Leetcode = () => {
 
              </div>
              <div className='col-span-2 row-span-1 overflow-hidden '>
-                 <RepoInfo repos={data.public_repos}/>  
+                 <RepoInfo number={126} label={'solved'} />  
              </div>
         
         </div>}

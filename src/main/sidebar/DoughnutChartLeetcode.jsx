@@ -9,30 +9,25 @@ const DoughnutChartLeetcode = ({ onSegmentClick }) => {
   const [total, setTotal] = useState(0);
   const totalRef = useRef(total);
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [info, setInfo] = useState({ label: "", value: 0 });
-  const [showInfo, setShowInfo] = useState(false);
+ 
 
   const data = {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["easy", "medium", "hard"],
     datasets: [
       {
-        label: "Dataset 1",
-        data: [20, 150, 2, 700, 29, 140],
+        
+        data: [52, 68, 6],
         backgroundColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
+          "rgba(45, 176, 212, 0.8)",
+          "rgba(230, 212, 11, 0.8)",
+          "rgba(219, 0, 48, 0.8)",
+          
         ],
         borderColor: [
           "rgba(255, 99, 132, 1)",
           "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
+          "rgba(255, 206, 86, 1)"
+         
         ],
         borderWidth: 0.1,
       },
@@ -103,40 +98,14 @@ const DoughnutChartLeetcode = ({ onSegmentClick }) => {
 
       // Draw the "min" label
       ctx.font = "12px Arial";
-      ctx.fillStyle = "yellow"; // Change color for "min"
-      ctx.fillText("min", centerX, centerY + 12); // Adjust y-position for spacing
+      ctx.fillStyle = "green"; // Change color for "min"
+      ctx.fillText("solved", centerX, centerY + 12); // Adjust y-position for spacing
 
       ctx.restore();
     },
   };
 
-  const customTooltip = {
-    id: "customTooltip",
-    beforeRender(chart) {
-      const tooltip = chart.tooltip;
 
-      if (tooltip && tooltip.opacity > 0) {
-        const tooltipModel = tooltip.dataPoints[0];
-        if (tooltipModel) {
-          const { ctx } = chart;
-          const { element } = tooltipModel;
-          const { x, y } = element.tooltipPosition();
-
-          const { label, formattedValue } = tooltipModel;
-
-          ctx.save();
-          ctx.font = "bold 12px Arial";
-          ctx.textAlign = "center";
-          ctx.textBaseline = "middle";
-          ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
-          ctx.fillRect(x - 50, y - 40, 100, 30); // Background box for tooltip
-          ctx.fillStyle = "#fff";
-          ctx.fillText(`${label}: ${formattedValue}`, x, y - 25);
-          ctx.restore();
-        }
-      }
-    },
-  };
 
   const options = {
     responsive: true,
@@ -154,7 +123,7 @@ const DoughnutChartLeetcode = ({ onSegmentClick }) => {
         display: false,
       },
       tooltip: {
-        enabled: false, // Disable the default tooltip
+        enabled: true, // Disable the default tooltip
       },
     },
     onClick: (e, activeElements) => {
@@ -182,25 +151,25 @@ const DoughnutChartLeetcode = ({ onSegmentClick }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-transparent p-4">
+    <div className="flex flex-col items-center justify-center bg-transparent pb-4 ">
       
-        <div className="h-[200px]">
+        <div className="h-[200px] ">
           <Doughnut
             data={data}
             options={options}
-            plugins={[totalCenterPlugin, customTooltip]}
+            plugins={[totalCenterPlugin]}
             ref={chartRef}
           />
         </div>
         
       
-      <div className=" w-full flex space-x-2   justify-center">
+      <div className=" w-full flex space-x-6   justify-center">
         
           {data.labels.map((label, index) => (
             <div
               key={index}
               className="flex items-center space-x-1 hover:cursor-pointer"
-              onClick={() => handleSegmentClick(index)}
+              
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -211,7 +180,7 @@ const DoughnutChartLeetcode = ({ onSegmentClick }) => {
                 }}
               ></span>
               <span
-                className="text-white text-sm"
+                className="text-white text-md"
                 style={{
                   color:
                     hoveredIndex === index
@@ -219,7 +188,7 @@ const DoughnutChartLeetcode = ({ onSegmentClick }) => {
                       : "white", // Change text color dynamically based on chart color
                 }}
               >
-                {label}
+                {label} {data.datasets[0].data[index]}
               </span>
             </div>
           ))}
@@ -231,4 +200,4 @@ const DoughnutChartLeetcode = ({ onSegmentClick }) => {
 
 export default DoughnutChartLeetcode;
 
-export const doughnutChartData = [20, 150, 2, 700, 29, 140]; // Export the total data
+

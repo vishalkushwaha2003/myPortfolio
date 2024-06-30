@@ -878,4 +878,5 @@ body {
 ::-webkit-scrollbar-thumb:horizontal:hover {
   background: #121212;
   cursor: -webkit-grab;
+  color: rgb(156, 212, 45);
 }

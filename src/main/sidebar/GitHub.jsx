@@ -59,7 +59,7 @@ const GitHub = () => {
 
              </div>
              <div className='col-span-2 row-span-1 overflow-hidden '>
-                 <RepoInfo repos={data.public_repos}/>  
+                 <RepoInfo number={data.public_repos} label={'Repos'}/>  
              </div>
         
         </div>}
