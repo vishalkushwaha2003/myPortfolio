@@ -6,7 +6,8 @@ import RepoInfo from './RepoInfo';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import GitHubActivityBox from './GitHubActivityBox';
-import GitHubRepoAnalysis from './GitHubRepoAnalysis';
+
+import DoughnutChartLeetcode from './DoughnutChartLeetcode';
 
 
 const Leetcode = () => {
@@ -69,7 +70,7 @@ const Leetcode = () => {
         </div>
         <div className=' w-full h-full  '>
           
-          
+          <DoughnutChartLeetcode/>
         </div>
       
     </div>
