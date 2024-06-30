@@ -27,10 +27,10 @@ const GitHubContributionGraph = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-fill h-full">
       <div className="flex space-x-4 mb-2">
         {months.map((month, index) => (
-          <div key={index} className="text-gray-400 text-xs flex flex-col justify-center items-center space-y-2 ">
+          <div key={index} className="text-gray-400 text-xs flex flex-col justify-center items-center space-y-[4px] ">
             <div>{month}</div>
 
             <div className="flex space-x-[4px]">

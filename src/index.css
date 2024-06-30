@@ -838,3 +838,44 @@ body {
 .parent:hover .card1 .logo .circle5 {
   transform: translate3d(0, 0, 120px);
 } */
+
+
+
+/* scroll effect animation *****************************************************/
+
+/* Vertical scrollbar */
+::-webkit-scrollbar {
+  width: 2px; /* Width of vertical scrollbar */
+  height: 2px; /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fcf9f959;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #121212;
+  cursor: -webkit-grab;
+  
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar-horizontal {
+  height: 5px; /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #fcf9f93b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #121212;
+  cursor: -webkit-grab;
+}

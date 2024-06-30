@@ -5,6 +5,7 @@ import RepoInfo from './RepoInfo';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import GitHubActivityBox from './GitHubActivityBox';
+import GitHubRepoAnalysis from './GitHubRepoAnalysis';
 
 
 const GitHub = () => {
@@ -42,8 +43,8 @@ const GitHub = () => {
   }
 
   return (
-    <div className='grid grid-cols-1 grid-rows-3 w-full px-5 h-full overflow-y-scroll'>
-        {data && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1 w-[80%] rounded-[15px] border-[0.5px]  mx-auto'>
+    <div className='grid grid-cols-1 grid-rows-3 w-full px-5 h-full overflow-y-scroll gap-3'>
+        {data && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1 w-[80%] rounded-[15px] border-slate-600 border-[0.5px]  mx-auto'>
              <div className='col-span-3 row-span-1  flex justify-center items-center p-5 overflow-hidden'>
                     <img src={data.avatar_url} alt="avatar" className='h-[100%] rounded-full animate__animated animate__fadeInRight' />
              </div>
@@ -62,11 +63,11 @@ const GitHub = () => {
              </div>
         
         </div>}
-        <div className='col-span-1 row-span-1 bg-red-600 p-[2px] rounded-[5px]'>
+        <div className='col-span-1 row-span-1  p-[2px] rounded-[5px] overflow-scroll'>
         <GitHubActivityBox/>
         </div>
-        <div className='col-span-1 row-span-1'>
-
+        <div className='col-span-1  w-full'>
+          <GitHubRepoAnalysis/>
         </div>
       
     </div>
