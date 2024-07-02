@@ -19,7 +19,7 @@ const InputComponent = ({myPlaceholder}) => {
   };
 
   return (
-    <div className="relative mx-auto w-[80%]">
+    <div className="relative  w-[90%] ">
       <input
         type="text"
         id="input"
@@ -29,7 +29,7 @@ const InputComponent = ({myPlaceholder}) => {
         onBlur={handleBlur}
         onChange={handleChange}
         placeholder={isFocused || inputValue?'':myPlaceholder}
-        className="w-full hover:cursor-pointer bg-[rgba(170,163,163,0.05)] border-none border-b-2 border-gray-300  p-1.5  outline-none focus:border-gray-800 text-[rgb(251,185,182)] text-md"
+        className="w-full hover:cursor-text bg-[rgba(170,163,163,0.05)] border-none border-b-2 border-gray-300  p-1.5  outline-none focus:border-gray-800 text-[rgb(251,185,182)] text-md"
       />
       <label
         htmlFor="input"
@@ -40,7 +40,7 @@ const InputComponent = ({myPlaceholder}) => {
         {isFocused || inputValue ? myPlaceholder:'' }
       </label>
       <div
-        className={`absolute left-0 bottom-0 h-0.5 w-full bg-[rgb(251,185,182)] transition-transform duration-300 ease-in-out ${
+        className={`absolute left-0 bottom-0 h-[1px] w-full bg-[rgb(251,185,182)] transition-transform duration-300 ease-in-out ${
           isFocused || inputValue ? 'scale-x-100' : 'scale-x-0'
         }`}
       ></div>
