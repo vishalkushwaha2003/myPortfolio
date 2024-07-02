@@ -13,7 +13,7 @@ const Character3d = () => {
         width="100%"
         
       >
-        <div className=" w-full h-full flex  justify-center items-center  ">
+        <div className=" w-full h-full flex justify-center items-center  ">
           <Loader />
         </div>
       </spline-viewer>
