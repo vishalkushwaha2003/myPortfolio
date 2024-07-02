@@ -873,6 +873,7 @@ body {
 ::-webkit-scrollbar-thumb:horizontal {
   background: #fcf9f93b;
   border-radius: 5px;
+  
 }
 
 ::-webkit-scrollbar-thumb:horizontal:hover {
@@ -880,3 +881,7 @@ body {
   cursor: -webkit-grab;
   color: rgb(156, 212, 45);
 }
+
+
+
+/* input css***************************************** */
