@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Navbar({ setActiveComponent }) {
-  const [activeButton, setActiveButton] = useState('');
+  const [activeButton, setActiveButton] = useState('About');
 
   const handleButtonClick = (component) => {
     setActiveComponent(component);
