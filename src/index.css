@@ -388,41 +388,59 @@ body {
   outline: none;
   overflow: hidden;
   color: #eec1bf;
-  transition: color 0.3s 0.1s ease-out;
+  transition: color 0.3s 0.1s ease-out, transform 0.5s;
   text-align: center;
+  z-index: 1;
 }
 
 .buttonNav span {
   margin: 10px;
 }
 
-.buttonNav::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+.buttonNav::before,
+.buttonNav::after {
   content: '';
-  border-radius: 50%;
   display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
-  text-align: center;
-  transition: box-shadow 0.5s ease-out;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
   z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: #fbb9b6;
 }
 
-.buttonNav:hover {
-  color: #fff;
-  border: 1px solid #fbb9b6;
+.buttonNav::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
 }
 
 .buttonNav:hover::before {
-  box-shadow: inset 0 0 0 10em #d3938f9f;
-} 
- 
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.buttonNav:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.buttonNav:hover {
+  color: #262424;
+  border: 1px solid #fbb9b6;
+}
+
+.buttonNav:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+.buttonNav.active {
+  background-color: #d3948fda; /* Adjust the active background color as needed */
+  color: #060606; /* Change text color for active button */
+}
+
 
 
 
