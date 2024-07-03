@@ -31,7 +31,7 @@ function ChatAppBackdrop() {
 
 
 
-          <div className="min-h-full w-full grid grid-cols-3  grid-rows-2 gap-2">
+          <div className="min-h-auto w-full grid grid-cols-3  grid-rows-2 gap-2">
             <div className="col-span-2 row-span-1 rounded-lg  overflow-hidden ">
               <img
                 src={chatimg1}
@@ -137,11 +137,18 @@ For users who have already signed up, the application offers a straightforward l
           <div className="text-xl">
           The chat application project leverages a combination of modern technologies to deliver a robust and engaging platform for real-time communication. From the secure signup and login process to the real-time messaging powered by Socket.IO, every component is designed to provide users with a seamless and enjoyable experience. The use of Express and MongoDB for backend and database management ensures scalability and performance, while the attractive UI enhances usability. Deploying the application on Render further simplifies the process, making it accessible to users at all times. Overall, this chat application is a comprehensive solution for real-time communication needs, offering security, functionality, and an exceptional user experience.
           
-            <br /> Improvement in the chat application is continue........Task is to make it responsive 
-              <br /> currently please open in the desktop mode. And upcoming changes consider to add media transfer and video call feature.
+           
            </div>
           </div>
 
+
+          <div className="text-wrap flex flex-col space-y-4">
+        <div className="text-3xl">What next ➡️</div>
+        <div className="text-xl">
+        Improvement in the chat application is continue........Task is to make it responsive 
+        <br /> currently please open in the desktop mode. And upcoming changes consider to add media transfer and video call feature.
+         </div>
+        </div>
 
         </div>
       </div>
