@@ -1,29 +1,26 @@
-import React from 'react'
+import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 import { FaLinkedinIn } from "react-icons/fa6";
 
-function PortfolioChard({data}) {
+function PortfolioChard({ data, handleOpen }) {
   return (
-    <div class="parent">
-    <div class="card1">
-       
-        <div class="glass1"></div>
-        <div class="content1">
-            <span class="title">{data}</span>
+    <div className="parent">
+      <div className="card1">
+        <div className="glass1"></div>
+        <div className="content1">
+          <span className="title">{data}</span>
         </div>
-        <div class="bottom">
-            
-            <div class="social-buttons-container">
-               <GitHubIcon fontSize={'medium'} className="social-button .social-button1 hover:cursor-pointer"/>
-               <FaLinkedinIn  className="social-button .social-button2 hover:cursor-pointer h-6"/>
-               <ExpandCircleDownIcon fontSize={'medium'} className="social-button .social-button3 hover:cursor-pointer"/>
-            </div>
-            
+        <div className="bottom">
+          <div className="social-buttons-container">
+            <GitHubIcon fontSize={'medium'} className="social-button social-button1 hover:cursor-pointer" />
+            <FaLinkedinIn className="social-button social-button2 hover:cursor-pointer h-6" />
+            <ExpandCircleDownIcon onClick={handleOpen} fontSize={'medium'} className="social-button social-button3 hover:cursor-pointer" />
+          </div>
         </div>
+      </div>
     </div>
-</div>
-  )
+  );
 }
 
-export default PortfolioChard
+export default PortfolioChard;

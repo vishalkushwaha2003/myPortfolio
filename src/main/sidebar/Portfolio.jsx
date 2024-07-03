@@ -10,6 +10,8 @@ import Leetcode from './Leetcode';
 function Portfolio() {
   const [activeSection, setActiveSection] = useState('All');
 
+
+ 
   const renderContent = () => {
     switch (activeSection) {
       case 'All':
@@ -88,6 +90,7 @@ function Portfolio() {
       </div>
       <div className=' w-full h-full col-span-12 row-span-11 '>
         {renderContent()}
+        
       </div>
     </div>
   );
