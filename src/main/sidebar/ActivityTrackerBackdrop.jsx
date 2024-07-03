@@ -7,7 +7,7 @@ import activityimg2 from '../../assets/images/activityTracker7.png';
 import activityimg3 from '../../assets/images/activityTracker3.png';
 import activityimg4 from '../../assets/images/activityTracker4.png';
 import activityimg5 from '../../assets/images/activityTracker5.png';
-import activityimg6 from '../../assets/images/activityTracker8.png';
+import activityimg8 from '../../assets/images/activityTracker8.png';
 
 
 
@@ -75,7 +75,7 @@ function ActivityTrackerBackdrop() {
 
           <div className="col-span-1 row-span-1 rounded-lg  overflow-hidden">
             <img
-              src={activityimg6}
+              src={activityimg8}
               alt="chatapp img"
               className="w-full h-full object-cover rounded-lg hover:scale-105 transition-all duration-300"
             />
