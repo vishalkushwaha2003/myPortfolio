@@ -7,7 +7,8 @@ import activityimg2 from '../../assets/images/activityTracker7.png';
 import activityimg3 from '../../assets/images/activityTracker3.png';
 import activityimg4 from '../../assets/images/activityTracker4.png';
 import activityimg5 from '../../assets/images/activityTracker5.png';
-import activityimg6 from '../../assets/images/activityTracker6.png';
+import activityimg6 from '../../assets/images/activityTracker8.png';
+
 
 
 function ActivityTrackerBackdrop() {
