@@ -35,7 +35,7 @@ function ActivityTrackerBackdrop() {
 
 
 
-        <div className="min-h-[300%] w-full grid grid-cols-2  grid-rows-3 gap-2">
+        <div className="min-h-auto w-full grid grid-cols-2  grid-rows-3 gap-2">
           <div className="col-span-1 row-span-1 rounded-lg  overflow-hidden ">
             <img
               src={activityimg1}
