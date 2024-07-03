@@ -17,7 +17,7 @@ function ChatAppBackdrop() {
         <div className="h-[90%] w-full p-2 flex flex-col space-y-4 overflow-scroll">
           <div className="text-wrap flex flex-col space-y-4">
             <div className="text-3xl">Introduction</div>
-            <div className="text-xl">a
+            <div className="text-xl">
               The chat application is a dynamic and interactive platform that
               allows users to engage in real-time conversations with one
               another. This project integrates several modern web development
@@ -137,7 +137,8 @@ For users who have already signed up, the application offers a straightforward l
           <div className="text-xl">
           The chat application project leverages a combination of modern technologies to deliver a robust and engaging platform for real-time communication. From the secure signup and login process to the real-time messaging powered by Socket.IO, every component is designed to provide users with a seamless and enjoyable experience. The use of Express and MongoDB for backend and database management ensures scalability and performance, while the attractive UI enhances usability. Deploying the application on Render further simplifies the process, making it accessible to users at all times. Overall, this chat application is a comprehensive solution for real-time communication needs, offering security, functionality, and an exceptional user experience.
           
-            <br /> Improment in the chat application is continue........
+            <br /> Improvement in the chat application is continue........Task is to make it responsive 
+              <br /> currently please open in the desktop mode. And upcoming changes consider to add media transfer and video call feature.
            </div>
           </div>
 
