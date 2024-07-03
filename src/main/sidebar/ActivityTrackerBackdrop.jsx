@@ -3,11 +3,11 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PersonIcon from '@mui/icons-material/Person';
 import GroupsIcon from '@mui/icons-material/Groups';
 import activityimg1 from '../../assets/images/activityTracker1.png';
-
+import activityimg2 from '../../assets/images/activityTracker2.png';
 import activityimg3 from '../../assets/images/activityTracker3.png';
 import activityimg4 from '../../assets/images/activityTracker4.png';
 import activityimg5 from '../../assets/images/activityTracker5.png';
-import activityimg6 from '../../assets/images/activityTracker6.png';
+// import activityimg6 from '../../assets/images/activityTracker6.png';
 import activityimg7 from '../../assets/images/activityTracker7.png';
 
 function ActivityTrackerBackdrop() {
@@ -74,7 +74,7 @@ function ActivityTrackerBackdrop() {
 
           <div className="col-span-1 row-span-1 rounded-lg  overflow-hidden">
             <img
-              src={activityimg6}
+              src={activityimg2}
               alt="chatapp img"
               className="w-full h-full object-cover rounded-lg hover:scale-105 transition-all duration-300"
             />
