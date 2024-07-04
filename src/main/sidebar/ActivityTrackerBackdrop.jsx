@@ -2,6 +2,9 @@ import React from 'react'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PersonIcon from '@mui/icons-material/Person';
 import GroupsIcon from '@mui/icons-material/Groups';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+
+import backend1 from '../../assets/images/backendArchitecture.png'
 import activityimg1 from '../../assets/images/activityTracker1.png';
 import activityimg2 from '../../assets/images/activityTracker7.png';
 import activityimg3 from '../../assets/images/activityTracker3.png';
@@ -29,6 +32,15 @@ function ActivityTrackerBackdrop() {
           <div className="text-3xl">Introduction</div>
           <div className="text-xl">
           In the digital age, managing online time effectively can be challenging. With countless websites vying for our attention, staying productive requires more than just self-discipline. To address this, our team—comprising Ramandeep Singh, Harsh, and myself, Vishal Kushwaha—has developed the Activity Tracker Chrome Extension. This innovative tool not only records user activity but also provides powerful features like website blocking and advanced admin controls to enhance productivity.
+          <br />
+          
+            • Read my medium post for permissions used in chrome extension... <a href="https://medium.com/@vishal2003kushwaha/permissions-used-in-developing-chrome-extension-cd8d14c441b6" target='_blank' className='hover:text-blue-600'><OpenInNewIcon/></a>
+            <br />
+            • Read Ramandeep medium post regarding menifest.json file... <a href="https://medium.com/@ramandeepsingh40270/building-your-first-chrome-extension-a-guide-to-the-manifest-json-file-c176dfc5b692" target='_blank' className='hover:text-blue-600'><OpenInNewIcon/></a>
+            <br />
+            • Read Harsh medium post regarding backend architecture implementation... <a href="" className='hover:text-blue-600'><OpenInNewIcon/></a>
+         
+          
           </div>
         </div>
 
@@ -129,7 +141,7 @@ function ActivityTrackerBackdrop() {
         <div className="text-2xl flex flex-col space-y-2">
          <div className='text-xl'>
           
-        Harsh was responsible for the backend development, which is powered by Spring Boot and Java 17. The backend architecture is designed using microservices, ensuring scalability and flexibility. Here’s a closer look at the backend components:
+        Harsh is responsible for the backend development, which is powered by Spring Boot and Java 17. The backend architecture is designed using microservices, ensuring scalability and flexibility. Here’s a closer look at the backend components:
           
           </div> 
           <div>→ Microservices Architecture
@@ -142,7 +154,11 @@ function ActivityTrackerBackdrop() {
             
             </div>
             
-            </div>   
+            </div > 
+              
+            <div className=''>
+            <img src={backend1} alt="backend architecture" className='object-cover' />
+              </div>  
             <div>→ Security
               <div className='text-xl'>To secure user data and ensure safe authentication processes, we implemented Spring Security with JWT (JSON Web Token) for secure authentication.</div>
               
