@@ -3,7 +3,7 @@ import Navbar from "../sidebar/Navbar";
 import About from "../sidebar/About";
 import Resume from "../sidebar/Resume";
 import Portfolio from "../sidebar/Portfolio";
-import Blog from "../sidebar/Blog";
+import Skills from "../sidebar/Skills";
 import Contact from "../sidebar/Contact";
 
 function Sidebar() {
@@ -17,8 +17,8 @@ function Sidebar() {
         return <Resume />;
       case "Portfolio":
         return <Portfolio />;
-      case "Blog":
-        return <Blog />;
+      case "Skills":
+        return <Skills/>;
       case "Contact":
         return <Contact />;
       default:

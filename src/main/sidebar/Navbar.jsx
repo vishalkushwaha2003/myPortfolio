@@ -29,10 +29,10 @@ function Navbar({ setActiveComponent }) {
         Portfolio
       </button>
       <button
-        className={`buttonNav ${activeButton === 'Blog' ? 'active' : ''}`}
-        onClick={() => handleButtonClick('Blog')}
+        className={`buttonNav ${activeButton === 'Skills' ? 'active' : ''}`}
+        onClick={() => handleButtonClick('Skills')}
       >
-        Blog
+        Skill sets
       </button>
       <button
         className={`buttonNav ${activeButton === 'Contact' ? 'active' : ''}`}
