@@ -2,10 +2,10 @@ import React from "react";
 
 function ProgressBar() {
   return (
-    <div className="px-2">
-      <div className="w-full bg-[rgba(50,52,57,0.46)] rounded-full h-1 p">
+    <div className="px-2 flex flex-col">
+      <div className="w-full bg-[rgba(64,65,66,0.46)] rounded-full h-1 p">
         <div
-          className="bg-[rgba(251,185,182,1)] h-1 rounded-full"
+          className="bg-[#fbb9b6] h-1 rounded-full"
           style={{ width: `20%` }}
         ></div>
       </div>
