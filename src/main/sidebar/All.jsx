@@ -40,7 +40,7 @@ function All() {
   };
 
   return (
-    <div className="w-full h-full p-5 justify-evenly flex items-center">
+    <div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
       <div className="animate__animated animate__fadeInLeft">
         <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} />
       </div>
