@@ -1,14 +1,16 @@
 import React from 'react'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FaLinkedinIn } from "react-icons/fa6";
 
 function PhotoSection() {
   return (
     <div className="card ">
-        <button className="mail">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+        <button className="mail text-[rgb(251,185,182)] hover:text-[#e16861] duration-100 hover:scale-125">
+       
+       <EmailOutlinedIcon fontSize='medium'/>
         </button>
         <div className="profile-pic">
             
@@ -22,16 +24,18 @@ function PhotoSection() {
               
             </svg>
         </div>
-        <div className="bottom">
-            <div className="content">
-                <span className="name">VISHAL KUSHWAHA</span>
-                <span className="about-me">fronted developer</span>
+        <div className="bottom px-auto  ">
+            <div className="content h-[50%] m-auto  flex flex-col justify-center items-center text-white/0 duration-[1s]">
+                
+                <div className="lg:text-[20px] md:text-[16px] lg:font-bold md:font-bold">VISHAL KUSHWAHA</div>
+                <div className="lg:text-[14px] md:text-[12px] lg:font-bold md:font-bold">fronted developer</div>
+               
             </div>
-           <div className="bottom-bottom">
-            <div className="social-links-container flex justify-around w-full">
+           <div className="bottom-bottom w-full  m-auto">
+            <div className=" social-links-container  flex justify-evenly  w-full">
                  <InstagramIcon fontSize='large' className='hover:cursor-pointer'/>
                  <GitHubIcon fontSize='large'className='hover:cursor-pointer' />
-                 <FaLinkedinIn className='w-[20px] hover:cursor-pointer'/>
+                 <FaLinkedinIn className='lg:w-[20px] md:[17px] hover:cursor-pointer'/>
                  <WhatsAppIcon fontSize='large' className='hover:cursor-pointer'/>
             </div>
             

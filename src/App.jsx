@@ -1,12 +1,12 @@
-import React from 'react'
-import MainContent from './main/main content/MainContent'
+import React from "react";
+import MainContent from "./main/main content/MainContent";
 
 function App() {
   return (
-    <div className= 'h-screen w-screen'>
-      <MainContent/>
+    <div className="lg:h-screen lg:w-screen">
+      <MainContent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

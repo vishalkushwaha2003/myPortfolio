@@ -17,8 +17,8 @@ body {
 
 
 .card {
-  max-width: 320px;
-  height: 350px;
+  max-width: 100%;
+  height: 100%;
   background: transparent;
   border-radius: 32px;
   padding: 3px;
@@ -39,14 +39,9 @@ body {
   border: none;
 }
 
-.card .mail svg {
-  stroke: rgb(251, 185, 182);
-  stroke-width: 3px;
-}
 
-.card .mail svg:hover {
-  stroke: #f55d56;
-}
+
+
 
 .card .profile-pic {
   position: absolute;
@@ -96,46 +91,62 @@ body {
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
-.card .bottom .content {
-  position: absolute;
-  bottom: 0;
-  left: 1.5rem;
-  right: 1.5rem;
-  height: 200px;
-}
 
-.card .bottom .content .name {
+
+/* .card .bottom .content .name {
   display: block;
   font-size: 1.2rem;
   color: white;
   font-weight: bold;
-}
+} */
 
-.card .bottom .content .about-me {
+/* .card .bottom .content .about-me {
   display: block;
   font-size: 0.9rem;
   color: white;
   margin-top: 1rem;
-}
+} */
 
 .card .bottom .bottom-bottom {
   position: absolute;
-  bottom: 1rem;
-  left: 1.5rem;
-  right: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  bottom: 0.5rem;
+  right: 0.5rem;
+ 
+ 
+ 
 }
 
 
 
 .card .bottom .bottom-bottom .social-links-container svg {
-  height: 30px;
+  height: 20px;
+  
   fill: rgb(255, 255, 255);
   filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+/* Breakpoint for large screens */
+@media (min-width: 1024px) {
+  .card .bottom .bottom-bottom .social-links-container svg {
+    height: 30px; /* Adjust as needed */
+  }
+}
+
+/* Breakpoint for medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card .bottom .bottom-bottom .social-links-container svg {
+    height: 23px; /* Adjust as needed */
+  }
+}
+
+/* Breakpoint for small screens */
+@media (max-width: 640px) {
+  .card .bottom .bottom-bottom .social-links-container svg {
+    height: 17px; /* Adjust as needed */
+  }
+}
+
 
 .card .bottom .bottom-bottom .social-links-container svg:hover {
   fill: #f1ccca;
@@ -143,7 +154,7 @@ body {
   
 }
 
-.card .bottom .bottom-bottom .button {
+/* .card .bottom .bottom-bottom .button {
   background: white;
   color: #080707;
   border: none;
@@ -151,22 +162,50 @@ body {
   font-size: 0.6rem;
   padding: 0.4rem 0.6rem;
   box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
-}
+} */
 
-.card .bottom .bottom-bottom .button:hover {
+/* .card .bottom .bottom-bottom .button:hover {
   background: #f55d56;
   color: white;
-}
+} */
 
 .card:hover {
   border-top-left-radius: 55px;
 }
 
 .card:hover .bottom {
-  top: 20%;
+  top: 40%;
   border-radius: 80px 29px 29px 29px;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
+.card:hover .bottom .content{
+  color: white;
+}
+
+/* Breakpoint for large screens */
+@media (min-width: 1024px) {
+  .card:hover .bottom {
+    top: 20%; /* Adjust as needed */
+    border-radius: 70px 25px 25px 25px; /* Adjust as needed */
+  }
+}
+
+/* Breakpoint for medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card:hover .bottom {
+    top: 30%; /* Adjust as needed */
+    border-radius: 75px 27px 27px 27px; /* Adjust as needed */
+  }
+}
+
+/* Breakpoint for small screens */
+@media (max-width: 640px) {
+  .card:hover .bottom {
+    top: 40%; /* Adjust as needed */
+    border-radius: 85px 30px 30px 30px; /* Adjust as needed */
+  }
+}
+
 
 .card:hover .profile-pic {
   width: 100px;
@@ -199,6 +238,11 @@ body {
 }
 
 
+
+
+
+
+/* end */
 
  .sideCard1 {
  
