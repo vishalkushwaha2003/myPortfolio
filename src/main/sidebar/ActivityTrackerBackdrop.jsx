@@ -30,7 +30,7 @@ function ActivityTrackerBackdrop() {
         </div>
         <div className="text-wrap flex flex-col space-y-4">
           <div className="sm:text-3xl text-2xl">Introduction</div>
-          <div className="sm:text-xl text-md">
+          <div className="sm:text-xl text-lg">
           In the digital age, managing online time effectively can be challenging. With countless websites vying for our attention, staying productive requires more than just self-discipline. To address this, our team—comprising Ramandeep Singh, Harsh, and myself, Vishal Kushwaha—has developed the Activity Tracker Chrome Extension. This innovative tool not only records user activity but also provides powerful features like website blocking and advanced admin controls to enhance productivity.
           <br />
           
@@ -99,14 +99,14 @@ function ActivityTrackerBackdrop() {
 
         <div className="text-wrap flex flex-col space-y-4">
         <div className="sm:text-3xl text-2xl">Activity Monitoring</div>
-        <div className="sm:text-xl text-md">
+        <div className="sm:text-xl text-lg">
         The core feature of Activity Tracker is its ability to monitor and record user activity within the Chrome browser. Users can view their activity data organized day-wise, month-wise, and year-wise. This detailed insight helps users understand their browsing habits and identify time-wasting patterns. The extension icon provides a quick summary of the user's daily activity, which can be expanded for more detailed views.
         </div>
         </div>
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Website Blocking</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Website Blocking</div>
+        <div className="sm:text-xl text-lg">
         One of the standout features of our extension is the ability to block specific websites. Users can set durations for which sites should be blocked and specify particular days and times when these blocks should be active. This flexible blocking system allows users to tailor their browsing restrictions to their unique schedules, promoting better focus and productivity.
           </div>
         </div>
@@ -114,8 +114,8 @@ function ActivityTrackerBackdrop() {
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Admin Control System</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Admin Control System</div>
+        <div className="sm:text-xl text-lg">
         An advanced feature currently in development is the admin control system. This system is designed for organizational use, enabling managers or admins to monitor and manage the web activities of their team members. Admins can see which websites are being used the most, set browsing restrictions, and gather valuable insights into employee productivity. This feature aims to help organizations identify top performers and those who may need additional support.
       
        </div>
@@ -123,29 +123,29 @@ function ActivityTrackerBackdrop() {
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">User Authentication</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">User Authentication</div>
+        <div className="sm:text-xl text-lg">
         To access the advanced features of Activity Tracker, users must authenticate themselves. This ensures that the sensitive data and control features are secure and only accessible to authorized individuals.           
        </div>
         </div>
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Frontend Development process</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Frontend Development process</div>
+        <div className="sm:text-xl text-lg">
         Ramandeep Singh and I focused on creating a seamless and user-friendly interface for the Activity Tracker extension. We utilized modern web technologies such as React for building the interactive UI components, Chart.js for visualizing activity data, and Material-UI and Tailwind CSS for a polished, responsive design.       </div>
         </div>
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Backend Development process</div>
+        <div className="sm:text-3xl text-2xl">Backend Development process</div>
         <div className="text-2xl flex flex-col space-y-2">
-         <div className='text-xl'>
+         <div className='sm:text-xl text-lg'>
           
         Harsh is responsible for the backend development, which is powered by Spring Boot and Java 17. The backend architecture is designed using microservices, ensuring scalability and flexibility. Here’s a closer look at the backend components:
           
           </div> 
           <div>→ Microservices Architecture
-            <div className='text-xl'>
+            <div className='sm:text-xl text-lg'>
             <b>User Service :</b> Handles all user-related processes, including authentication and data management.
             <br />
            <b>Admin Service :</b> Manages organizational-level operations, allowing admins to control and monitor team activities.
@@ -160,18 +160,18 @@ function ActivityTrackerBackdrop() {
             <img src={backend1} alt="backend architecture" className='object-cover' />
               </div>  
             <div>→ Security
-              <div className='text-xl'>To secure user data and ensure safe authentication processes, we implemented Spring Security with JWT (JSON Web Token) for secure authentication.</div>
+              <div className='sm:text-xl text-lg'>To secure user data and ensure safe authentication processes, we implemented Spring Security with JWT (JSON Web Token) for secure authentication.</div>
               
               </div> 
 
               <div>→ Event-Driven Architecture
-              <div className='text-xl'>The backend utilizes an event-driven architecture for efficient asynchronous processing, ensuring real-time updates and responsiveness.</div>
+              <div className='sm:text-xl text-lg'>The backend utilizes an event-driven architecture for efficient asynchronous processing, ensuring real-time updates and responsiveness.</div>
               
               </div>    
 
 
               <div>→ Data Management
-            <div className='text-xl'>
+            <div className='sm:text-xl text-lg'>
             <b>Redis :</b> Used for fast in-memory data storage, handling temporary user data such as active tabs efficiently.
             <br />
           
@@ -186,8 +186,8 @@ function ActivityTrackerBackdrop() {
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Deployment and Scalability</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Deployment and Scalability</div>
+        <div className="sm:text-xl text-lg">
         Our extension is deployed using AWS EC2 and MySQL RDS, providing scalable compute power and managed database services. Continuous Integration and Continuous Deployment (CI/CD) are managed through GitHub Actions, automating the development and deployment process. We also use Nginx for load balancing and as a reverse proxy to improve performance.
           <br />
           For scalability, we employ horizontal scaling, adding more instances to handle increased load. The Spring Eureka Discovery Server manages microservice interactions, while the Config Server centralizes configuration management.
@@ -199,8 +199,8 @@ function ActivityTrackerBackdrop() {
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">CI/CD Enhancements</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">CI/CD Enhancements</div>
+        <div className="sm:text-xl text-lg">
         We plan to integrate Jenkins to further enhance our continuous integration and deployment pipeline, making the development process even more efficient.          
          </div>
         </div>
@@ -208,16 +208,16 @@ function ActivityTrackerBackdrop() {
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Advanced AWS Services</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Advanced AWS Services</div>
+        <div className="sm:text-xl text-lg">
         In the future, we aim to leverage AWS Lambda for serverless compute and AWS Cognito for advanced user authentication, enhancing the scalability and security of our extension.
          </div>
         </div>
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Monitoring</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Monitoring</div>
+        <div className="sm:text-xl text-lg">
         To ensure the smooth operation of our system, we plan to implement comprehensive monitoring using Grafana, Prometheus, and Loki. These tools will provide valuable insights into system performance and help us proactively address any issues.    
        </div>
         </div>
@@ -227,8 +227,8 @@ function ActivityTrackerBackdrop() {
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Conclusion</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Conclusion</div>
+        <div className="sm:text-xl text-lg">
         The Activity Tracker Chrome Extension is a powerful tool designed to help users monitor and manage their web activity effectively. With features like detailed activity tracking, flexible website blocking, and an advanced admin control system, this extension aims to boost productivity and provide insightful analytics. Our team is committed to continuously improving the extension, with exciting new features and enhancements on the horizon. Stay tuned for more updates as we revolutionize productivity monitoring!
         
                 </div>
@@ -236,8 +236,8 @@ function ActivityTrackerBackdrop() {
 
         
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">What next ➡️</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">What next ➡️</div>
+        <div className="sm:text-xl text-lg">
         Improvement in the ActivityTracker is continue........Task is to make it  more secure.
        And upcoming changes consider to add Admit section.
          </div>
