@@ -17,7 +17,7 @@ import activityimg6 from '../../assets/images/activityTracker6.png';
 function ActivityTrackerBackdrop() {
   return (
     <div className="w-full h-full  flex justify-center items-center">
-    <div className="w-[50%] h-[80%] bg-[rgba(251,185,182,0.05)] rounded-xl flex flex-col">
+    <div className="lg:w-[50%] lg:h-[80%] sm:w-[70%] sm:h-[80%] w-[96%] h-[96%] bg-[rgba(251,185,182,0.05)] rounded-xl flex flex-col">
       <div className="w-[100%] h-[10%] flex justify-center items-center text-3xl font-bold">
        <AccessTimeIcon fontSize='large'/> ActivityTracker
       </div>

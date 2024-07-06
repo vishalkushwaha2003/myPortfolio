@@ -10,7 +10,7 @@ import chatimg4 from "../../assets/images/chatApp4.png";
 function ChatAppBackdrop() {
   return (
     <div className="w-full h-full  flex justify-center items-center">
-      <div className="w-[50%] h-[80%] bg-[rgba(251,185,182,0.05)] rounded-xl flex flex-col">
+      <div className="lg:w-[50%] lg:h-[80%] sm:w-[70%] sm:h-[80%] w-[96%] h-[96%] bg-[rgba(251,185,182,0.05)] rounded-xl flex flex-col">
         <div className="w-[100%] h-[10%] flex justify-center items-center text-3xl font-bold">
           <a href="https://chatting-app-ouxe.onrender.com" target="_blank" className="hover:text-blue-700"><ChatIcon/>  Chat App <OpenInNewIcon/></a>
         </div>
