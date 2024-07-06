@@ -18,19 +18,19 @@ function ActivityTrackerBackdrop() {
   return (
     <div className="w-full h-full  flex justify-center items-center">
     <div className="lg:w-[50%] lg:h-[80%] sm:w-[70%] sm:h-[80%] w-[96%] h-[96%] bg-[rgba(251,185,182,0.05)] rounded-xl flex flex-col">
-      <div className="w-[100%] h-[10%] flex justify-center items-center text-3xl font-bold">
+      <div className="w-[100%] h-[10%] flex justify-center items-center text-3xl  font-bold">
        <AccessTimeIcon fontSize='large'/> ActivityTracker
       </div>
       <div className="h-[90%] w-full p-2 flex flex-col space-y-4 overflow-scroll">
         <div className='w-full h-[20%] grid grid-cols-3 row-span-2 gap-1 px-5'>
-          <div className='col-span-3  row-span-1 flex justify-center items-center text-lg'><GroupsIcon/> Team Members</div>
-          <div className='col-span-1 row-span-1 bg-[rgba(251,185,182,0.05)]  rounded-md hover:text-blue-500 hover:cursor-pointer'><a href="https://www.linkedin.com/in/vishal-kushwaha-947364249/" target="_blank" className='flex justify-center items-center'><PersonIcon/> Vishal Kushwaha (me)</a></div>
-          <div className='col-span-1 row-span-1 bg-[rgba(251,185,182,0.05)]  rounded-md hover:text-blue-500 hover:cursor-pointer'><a href="https://www.linkedin.com/in/ramandeep-singh-3b6560249/" target="_blank" className='flex justify-center items-center'><PersonIcon/> Ramandeep Singh</a></div>
-          <div className='col-span-1 row-span-1  bg-[rgba(251,185,182,0.05)] rounded-md hover:text-blue-500 hover:cursor-pointer'><a href="https://www.linkedin.com/in/harsh-srivastav123/"  target="_blank" className='flex justify-center items-center'><PersonIcon/> Harsh Raj Srivastav</a></div>
+          <div className='col-span-3  row-span-1 flex justify-center items-center sm:text-lg text-sm'><GroupsIcon/> Team Members</div>
+          <div className='col-span-1 row-span-1 bg-[rgba(251,185,182,0.05)]  rounded-md hover:text-blue-500 hover:cursor-pointer sm:text-lg text-sm flex justify-center items-center'><a href="https://www.linkedin.com/in/vishal-kushwaha-947364249/" target="_blank" className='flex justify-center items-center'><PersonIcon/> Vishal Kushwaha (me)</a></div>
+          <div className='col-span-1 row-span-1 bg-[rgba(251,185,182,0.05)]  rounded-md hover:text-blue-500 hover:cursor-pointer sm:text-lg text-sm flex justify-center items-center'><a href="https://www.linkedin.com/in/ramandeep-singh-3b6560249/" target="_blank" className='flex justify-center items-center '><PersonIcon/> Ramandeep Singh</a></div>
+          <div className='col-span-1 row-span-1  bg-[rgba(251,185,182,0.05)] rounded-md hover:text-blue-500 hover:cursor-pointer sm:text-lg text-sm flex justify-center items-center'><a href="https://www.linkedin.com/in/harsh-srivastav123/"  target="_blank" className='flex justify-center items-center'><PersonIcon/> Harsh Raj Srivastav</a></div>
         </div>
         <div className="text-wrap flex flex-col space-y-4">
-          <div className="text-3xl">Introduction</div>
-          <div className="text-xl">
+          <div className="sm:text-3xl text-2xl">Introduction</div>
+          <div className="sm:text-xl text-md">
           In the digital age, managing online time effectively can be challenging. With countless websites vying for our attention, staying productive requires more than just self-discipline. To address this, our team—comprising Ramandeep Singh, Harsh, and myself, Vishal Kushwaha—has developed the Activity Tracker Chrome Extension. This innovative tool not only records user activity but also provides powerful features like website blocking and advanced admin controls to enhance productivity.
           <br />
           
@@ -98,8 +98,8 @@ function ActivityTrackerBackdrop() {
 
 
         <div className="text-wrap flex flex-col space-y-4">
-        <div className="text-3xl">Activity Monitoring</div>
-        <div className="text-xl">
+        <div className="sm:text-3xl text-2xl">Activity Monitoring</div>
+        <div className="sm:text-xl text-md">
         The core feature of Activity Tracker is its ability to monitor and record user activity within the Chrome browser. Users can view their activity data organized day-wise, month-wise, and year-wise. This detailed insight helps users understand their browsing habits and identify time-wasting patterns. The extension icon provides a quick summary of the user's daily activity, which can be expanded for more detailed views.
         </div>
         </div>
