@@ -27,8 +27,8 @@ function PhotoSection() {
         <div className="bottom px-auto  ">
             <div className="content h-[50%] m-auto  flex flex-col justify-center items-center text-white/0 duration-[1s]">
                 
-                <div className="lg:text-[20px] md:text-[16px] lg:font-bold md:font-bold">VISHAL KUSHWAHA</div>
-                <div className="lg:text-[14px] md:text-[12px] lg:font-bold md:font-bold">fronted developer</div>
+                <div className="lg:text-[20px] md:text-[16px] lg:font-bold md:font-bold sm:font-medium">VISHAL KUSHWAHA</div>
+                <div className="lg:text-[14px] md:text-[12px] lg:font-bold md:font-bold sm:font-medium">fronted developer</div>
                
             </div>
            <div className="bottom-bottom w-full  m-auto">

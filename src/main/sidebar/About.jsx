@@ -30,7 +30,7 @@ function About() {
       </div>
 
       </div>
-      <div className=" col-span-12 row-span-6 flex justify-center items-center  ">
+      <div className=" col-span-12 row-span-6 flex justify-center items-center  overflow-x-scroll ">
         <AboutCard />
       </div>
     </div>

@@ -3,41 +3,39 @@ import { Button } from '@mui/material';
 import All from './All';
 import WebDevelopment from './WebDevelopment';
 import ChromeExtension from './ChromeExtension';
-
 import GitHub from './GitHub';
 import Leetcode from './Leetcode';
 
 function Portfolio() {
   const [activeSection, setActiveSection] = useState('All');
 
-
- 
   const renderContent = () => {
     switch (activeSection) {
       case 'All':
-        return <All/>;
+        return <All />;
       case 'Web Development':
-        return <WebDevelopment/>;
+        return <WebDevelopment />;
       case 'Chrome Extension':
-        return <ChromeExtension/>;
+        return <ChromeExtension />;
       case 'GitHub':
-        return <GitHub/>;
+        return <GitHub />;
       case 'Leetcode':
-        return <Leetcode/>;
+        return <Leetcode />;
       default:
-        return <All/>;
+        return <All />;
     }
   };
 
   return (
     <div className='h-full w-full grid grid-cols-12 grid-rows-12'>
-      <div className='col-span-12 row-span-1 flex justify-start items-start px-5 '>
+      <div className='w-full col-span-12 row-span-1 flex justify-start items-start px-5  overflow-x-scroll'>
         <Button 
           variant='text' 
           size='small' 
           sx={{ 
             color: 'whitesmoke', 
-            padding: '5px 15px' 
+            // padding: '5px 15px',
+            minWidth: '60px' // Set fixed width
           }} 
           onClick={() => setActiveSection('All')}
         >
@@ -48,7 +46,8 @@ function Portfolio() {
           size='small' 
           sx={{ 
             color: 'whitesmoke', 
-            padding: '5px 15px' 
+            // padding: '5px 15px',
+            minWidth: '180px' // Set fixed width
           }} 
           onClick={() => setActiveSection('Web Development')}
         >
@@ -59,7 +58,8 @@ function Portfolio() {
           size='small' 
           sx={{ 
             color: 'whitesmoke', 
-            padding: '5px 15px' 
+            padding: '5px 15px',
+            minWidth: '180px' // Set fixed width
           }} 
           onClick={() => setActiveSection('Chrome Extension')}
         >
@@ -70,7 +70,8 @@ function Portfolio() {
           size='small' 
           sx={{ 
             color: 'whitesmoke', 
-            padding: '5px 15px' 
+            // padding: '5px 15px',
+            minWidth: '100px' // Set fixed width
           }} 
           onClick={() => setActiveSection('GitHub')}
         >
@@ -81,16 +82,16 @@ function Portfolio() {
           size='small' 
           sx={{ 
             color: 'whitesmoke', 
-            padding: '5px 15px' 
+            // padding: '5px 15px',
+            minWidth: '110px' // Set fixed width
           }} 
           onClick={() => setActiveSection('Leetcode')}
         >
           Leetcode
         </Button>
       </div>
-      <div className=' w-full h-full col-span-12 row-span-11 '>
+      <div className='w-full h-full col-span-12 row-span-11'>
         {renderContent()}
-        
       </div>
     </div>
   );

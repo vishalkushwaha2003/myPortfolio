@@ -43,10 +43,10 @@ const GitHub = () => {
   }
 
   return (
-    <div className='grid grid-cols-1 grid-rows-3 w-full px-5 h-full overflow-y-scroll gap-3'>
+    <div className='pt-2 grid grid-cols-1 grid-rows-3 w-full px-5 h-full overflow-y-scroll gap-3'>
         {data && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1 w-[80%] rounded-[15px] border-slate-600 border-[0.5px]  mx-auto'>
              <div className='col-span-3 row-span-1  flex justify-center items-center p-5 overflow-hidden'>
-                    <img src={data.avatar_url} alt="avatar" className='h-[100%] rounded-full animate__animated animate__fadeInRight' />
+                    <img src={data.avatar_url} alt="avatar" className='md:h-[100%] sm:h-[70%] rounded-full animate__animated animate__fadeInRight' />
              </div>
              <div className='col-span-7 row-span-1  flex flex-col justify-center items-center overflow-hidden '>
                    <div className='text-[25px] font-bold text-white animate__animated animate__fadeInLeft'>{data.name}</div>

@@ -7,28 +7,36 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-
 import Tooltip from '@mui/material/Tooltip';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Timeliner() {
+  const isSmallScreen = useMediaQuery('(max-width:600px)');
+  const isMediumScreen = useMediaQuery('(min-width:600px) and (max-width:960px)');
+
+  const getFontSize = () => {
+    if (isSmallScreen) return '10px';
+    if (isMediumScreen) return '13px';
+    return '18px';
+  };
+
   return (
     <Timeline position="alternate">
       <TimelineItem>
-        
         <TimelineSeparator>
-          {/* <TimelineDot /> */}
-          <MenuBookIcon sx={{
-            color:'rgba(255,255,255)'
-          }}/>
+          <MenuBookIcon sx={{ color: 'rgba(255,255,255)' }} />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent className='animate__animated animate__bounceIn'
-         sx={{
-          color:'rgba(255,255,255)',
-          fontSize:'20px',
-          fontWeight:'500'
-          
-        }}>Education</TimelineContent>
+        <TimelineContent
+          className="animate__animated animate__bounceIn"
+          sx={{
+            color: 'rgba(255,255,255)',
+            fontSize: getFontSize(),
+            fontWeight: '500',
+          }}
+        >
+          Education
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="rgba(251, 185, 182,0.5)">
@@ -36,18 +44,24 @@ export default function Timeliner() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
-          {/* <Tip/> */}
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent  className='animate__animated animate__bounceIn'
-        sx={{
-          color:'rgba(255,255,255,0.9)',
-          fontSize:'18px',
-          fontWeight:'400',
-          fontFamily:'unset'
-        }}>
-
-<Tooltip title="from Jawahar Navodaya Vidyalaya" placement="top-start" className='hover:cursor-pointer hover:text-white'>Matriculation</Tooltip>
+        <TimelineContent
+          className="animate__animated animate__bounceIn"
+          sx={{
+            color: 'rgba(255,255,255,0.9)',
+            fontSize: getFontSize(),
+            fontWeight: '400',
+            fontFamily: 'unset',
+          }}
+        >
+          <Tooltip
+            title="from Jawahar Navodaya Vidyalaya"
+            placement="top-start"
+            className="hover:cursor-pointer hover:text-white"
+          >
+            Matriculation
+          </Tooltip>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -58,15 +72,22 @@ export default function Timeliner() {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent className='animate__animated animate__bounceIn'
-        sx={{
-          color:'rgba(255,255,255,0.9)',
-          fontSize:'18px',
-          fontWeight:'400',
-          fontFamily:'unset'
-        }}>
-<Tooltip title="from Jawahar Navodaya Vidyalaya" placement="top-start" className='hover:cursor-pointer hover:text-white'>Intermediate</Tooltip>
-
+        <TimelineContent
+          className="animate__animated animate__bounceIn"
+          sx={{
+            color: 'rgba(255,255,255,0.9)',
+            fontSize: getFontSize(),
+            fontWeight: '400',
+            fontFamily: 'unset',
+          }}
+        >
+          <Tooltip
+            title="from Jawahar Navodaya Vidyalaya"
+            placement="top-start"
+            className="hover:cursor-pointer hover:text-white"
+          >
+            Intermediate
+          </Tooltip>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -77,15 +98,22 @@ export default function Timeliner() {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent className='animate__animated animate__bounceIn'
-        sx={{
-           color:'rgba(255,255,255,0.9)',
-           fontSize:'18px',
-           fontWeight:'400',
-           fontFamily:'unset'
-        }}>
-<Tooltip title="from Harcourt Butler Technical University" placement="top-start" className='hover:cursor-pointer hover:text-white'>Graduation</Tooltip>
-
+        <TimelineContent
+          className="animate__animated animate__bounceIn"
+          sx={{
+            color: 'rgba(255,255,255,0.9)',
+            fontSize: getFontSize(),
+            fontWeight: '400',
+            fontFamily: 'unset',
+          }}
+        >
+          <Tooltip
+            title="from Harcourt Butler Technical University"
+            placement="top-start"
+            className="hover:cursor-pointer hover:text-white"
+          >
+            Graduation
+          </Tooltip>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

@@ -9,28 +9,24 @@ const BarChart = () => {
   const data = {
     labels: labels,
     datasets: [{
-      
       data: [70, 80, 40, 60, 30],
       backgroundColor: [
-        'rgb(251, 185, 182,0.2)',
-        
-      
+        'rgba(251, 185, 182, 0.2)',
       ],
       borderColor: [
         'rgb(251, 185, 182)',
-        
-        
       ],
       borderWidth: 1,
     }]
   };
 
   const options = {
+    maintainAspectRatio: false, // Prevents the aspect ratio from being maintained
     scales: {
       y: {
         beginAtZero: true,
         grid: {
-          color: 'rgba(255,255,255,0.2)', // Grid line color
+          color: 'rgba(255, 255, 255, 0.2)', // Grid line color
         },
         ticks: {
           color: 'white', // Y-axis label color
@@ -38,7 +34,7 @@ const BarChart = () => {
       },
       x: {
         grid: {
-          color: 'rgba(255,255,255,0.1)', // Grid line color
+          color: 'rgba(255, 255, 255, 0.1)', // Grid line color
         },
         ticks: {
           color: 'white', // X-axis label color
@@ -52,7 +48,11 @@ const BarChart = () => {
     }
   };
 
-  return <Bar data={data} options={options} />;
+  return (
+    <div className="h-[40vh] w-full">
+      <Bar data={data} options={options} />
+    </div>
+  );
 };
 
 export default BarChart;

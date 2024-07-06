@@ -208,8 +208,8 @@ body {
 
 
 .card:hover .profile-pic {
-  width: 100px;
-  height: 100px;
+  width:32% ;
+  height: 35%;
   aspect-ratio: 1;
   top: 10px;
   left: 10px;
@@ -502,7 +502,7 @@ body {
 
 .container .glass {
   position: relative;
-  width: 150px;
+  min-width: 150px;
   height: 170px;
   background: linear-gradient(#fff2, transparent);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -521,6 +521,8 @@ body {
 .container:hover .glass {
   transform: rotate(0deg);
   margin: 0 10px;
+  width: 150px;
+  
 }
 
 .container .glass::before {
@@ -534,6 +536,8 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
+ 
+
 }
 .container .glass img {
   font-size: 2.5em;
