@@ -31,7 +31,7 @@ function PhotoSection() {
                 <div className="lg:text-[14px] md:text-[12px] lg:font-bold md:font-bold sm:font-medium">fronted developer</div>
                
             </div>
-           <div className="bottom-bottom w-full  m-auto">
+           <div className="bottom-bottom lg:bottom-2 xl:bottom-3 2xl:bottom-5 md-bottom-10 sm:bottom-5 bottom-5  w-full  m-auto">
             <div className=" social-links-container  flex justify-evenly  w-full">
                  <InstagramIcon fontSize='large' className='hover:cursor-pointer'/>
                  <GitHubIcon fontSize='large'className='hover:cursor-pointer' />

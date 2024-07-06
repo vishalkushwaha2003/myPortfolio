@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 function MainContent() {
   return (
     <div
-      className="w-full h-full p-5 bg-[#0c0c0c] shadow-[0px_0px_30px_10px_rgb(25,25,25)] 
+      className="w-full h-full sm:p-5 p-2  bg-[#0c0c0c] shadow-[0px_0px_30px_10px_rgb(25,25,25)] 
                 rounded-[30px] md:overflow-y-scroll flex flex-col sm:flex-col md:flex-col lg:flex-row gap-5"
     >
       <div className=" h-[30vh] sm:h-[30vh] sm:w-full md:h-[35vh] md:w-full lg:h-full lg:w-[25%] flex  sm:flex-row md:flex-row lg:flex-col gap-3">

@@ -11,7 +11,7 @@ import aboutImage5 from '../../assets/images/icon-design.svg'
 
 function AboutCard() {
   return (
-    <div className="container">
+    <div className="container w-screen h-full sm:justify-center justify-center sm:hover:justify-center  hover:justify-start overflow-x-scroll">
       <div data-text="Web Designer" style={{ "--r": "-15" }} className="glass hover:cursor-pointer hover:border-[1px] hover:border-[#fbb9b6]">
         
         <img src={aboutImage1} alt="" />

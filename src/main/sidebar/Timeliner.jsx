@@ -11,10 +11,12 @@ import Tooltip from '@mui/material/Tooltip';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Timeliner() {
-  const isSmallScreen = useMediaQuery('(max-width:600px)');
-  const isMediumScreen = useMediaQuery('(min-width:600px) and (max-width:960px)');
+  const isxSmallScreen = useMediaQuery('(max-width:640px)');
+  const isSmallScreen = useMediaQuery('(min-width:640px) and (max-width:768px)');
+  const isMediumScreen = useMediaQuery('(min-width:768px) and (max-width:1024px)');
 
   const getFontSize = () => {
+    if (isxSmallScreen) return '16px';
     if (isSmallScreen) return '10px';
     if (isMediumScreen) return '13px';
     return '18px';
