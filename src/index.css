@@ -136,14 +136,14 @@ body {
 /* Breakpoint for medium screens */
 @media (min-width: 768px) and (max-width: 1023px) {
   .card .bottom .bottom-bottom .social-links-container svg {
-    height: 23px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
   }
 }
 
 /* Breakpoint for small screens */
 @media (max-width: 640px) {
   .card .bottom .bottom-bottom .social-links-container svg {
-    height: 17px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
   }
 }
 
