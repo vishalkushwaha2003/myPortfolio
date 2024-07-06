@@ -28,7 +28,7 @@ function Sidebar() {
   return (
     <div className="sideCard1 w-full h-full hover:shadow-[0px_0px_15px_2px_rgba(241,176,176,0.6)] rounded-[30px] ">
       <div className="sideCard2 w-full h-full  grid grid-cols-12 grid-rows-12 overflow-hidden">
-        <div className="col-span-12 row-span-2 flex justify-center items-center"><Navbar  setActiveComponent={setActiveComponent} /></div>
+        <div className="col-span-12 w-full row-span-2 flex sm:justify-center  items-center "><Navbar  setActiveComponent={setActiveComponent} /></div>
         <div className="col-span-12 row-span-10">{renderComponent()}</div>
       </div>
     </div> 

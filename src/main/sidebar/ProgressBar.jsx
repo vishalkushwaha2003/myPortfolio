@@ -9,8 +9,8 @@ function ProgressBar({progress}) {
           style={{ width: `${progress}%` }}
         ></div>
       </div>
-      <div className="grid grid-cols-2 grid-rows-2 text-xs text-[rgba(221,201,201,0.65)]">
-        <div className=" col-span-1 row-span-1 text-left ">Beg</div>
+      <div className="grid grid-cols-2 grid-rows-2 sm:text-xs text-[10px] text-[rgba(221,201,201,0.65)]">
+        <div className=" col-span-1 row-span-1  text-left ">Beg</div>
         <div className=" col-span-1 row-span-1 text-right">Adv</div>
       </div>
     </div>
