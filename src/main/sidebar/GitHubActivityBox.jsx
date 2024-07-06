@@ -126,7 +126,7 @@ const GitHubContributionGraph = () => {
   };
 
   return (
-    <div className="flex flex-col w-fill h-full animate__animated animate__fadeInDown">
+    <div className="flex flex-col w-auto h-full justify-center   animate__animated animate__fadeInDown">
       <div className="flex space-x-3 mb-2">
         {months.map((month, index) => (
           <div key={index} className="text-gray-400 text-xs flex flex-col justify-center items-center space-y-[4px] ">

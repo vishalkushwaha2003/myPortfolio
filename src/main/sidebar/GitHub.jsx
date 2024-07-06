@@ -43,12 +43,12 @@ const GitHub = () => {
   }
 
   return (
-    <div className='pt-2 grid grid-cols-1 grid-rows-3 w-full px-5 h-full overflow-y-scroll gap-3'>
-        {data && <div className='col-span-1 row-span-1 grid grid-cols-12 grid-rows-1 w-[80%] rounded-[15px] border-slate-600 border-[0.5px]  mx-auto'>
-             <div className='col-span-3 row-span-1  flex justify-center items-center p-5 overflow-hidden'>
-                    <img src={data.avatar_url} alt="avatar" className='md:h-[100%] sm:h-[70%] rounded-full animate__animated animate__fadeInRight' />
+    <div className='pt-2 flex flex-col gap-3 sm:grid sm:grid-cols-1 sm:grid-rows-3 w-full sm:px-5 sm:h-full h-[120vh]'>
+        {data && <div className=' h-[40vh] sm:h-full grid sm:grid-cols-12 grid-cols-1 sm:grid-rows-1 grid-rows-12 sm:w-[80%] w-[98%] rounded-[15px] border-slate-600 border-[0.5px] gap-3 mx-auto'>
+             <div className='sm:col-span-3 col-span-1  sm:row-span-1 row-span-4  flex justify-center items-center sm:p-5 pt-2 overflow-hidden'>
+                    <img src={data.avatar_url} alt="avatar" className='md:h-[100%] sm:h-[70%] h-[100%]  rounded-full animate__animated animate__fadeInRight' />
              </div>
-             <div className='col-span-7 row-span-1  flex flex-col justify-center items-center overflow-hidden '>
+             <div className='sm:col-span-7 col-span-1 sm:row-span-1  row-span-5 flex flex-col justify-center items-center overflow-hidden '>
                    <div className='text-[25px] font-bold text-white animate__animated animate__fadeInLeft'>{data.name}</div>
                    <div className='text-[15px] text-gray-400 animate__animated animate__fadeInLeft'>{data.login}</div>
                    <div className='flex gap-3 animate__animated animate__fadeInLeft'>
@@ -58,15 +58,15 @@ const GitHub = () => {
                    <div className='text-[15px] text-gray-400 animate__animated animate__fadeInLeft'><EmailOutlinedIcon/> vishalkushwaha2003@gmail.com</div>
 
              </div>
-             <div className='col-span-2 row-span-1 overflow-hidden '>
+             <div className='sm:col-span-2  col-span-1 sm:row-span-1  row-span-3 h-full w-full overflow-hidden '>
                  <RepoInfo number={data.public_repos} label={'Repos'}/>  
              </div>
         
         </div>}
-        <div className='col-span-1 row-span-1  p-[2px] rounded-[5px] overflow-scroll'>
+        <div className=' h-[20vh] sm:h-full w-full p-[2px]  rounded-[5px] overflow-scroll'>
         <GitHubActivityBox/>
         </div>
-        <div className=' w-full h-full  '>
+        <div className=' w-full sm:h-full h-[60vh]  '>
           
           <GitHubRepoAnalysis/>
         </div>

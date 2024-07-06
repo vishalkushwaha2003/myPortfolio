@@ -9,7 +9,7 @@ function Navbar({ setActiveComponent }) {
   };
 
   return (
-    <nav className="flex justify-center space-x-5 items-center">
+    <div className=" h-[60%] w-auto flex justify-center gap-5 items-center  overflow-x-scroll">
       <button
         className={`buttonNav ${activeButton === 'About' ? 'active' : ''}`}
         onClick={() => handleButtonClick('About')}
@@ -40,7 +40,7 @@ function Navbar({ setActiveComponent }) {
       >
         Contact
       </button>
-    </nav>
+    </div>
   );
 }
 

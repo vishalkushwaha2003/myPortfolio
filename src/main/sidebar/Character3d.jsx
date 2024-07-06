@@ -4,7 +4,7 @@ import Loader from './Loader';
 
 const Character3d = () => {
   return (
-    <div className='w-[60%]  h-full m-auto overflow-hidden flex justify-center items-start'>
+    <div className='sm:w-[60%] w-[90%] h-full m-auto overflow-hidden flex justify-center items-start'>
       <spline-viewer 
         hint 
         url="https://prod.spline.design/Jp2fE2upCjWifr97/scene.splinecode"

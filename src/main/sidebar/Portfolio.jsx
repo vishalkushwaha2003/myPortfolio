@@ -90,7 +90,7 @@ function Portfolio() {
           Leetcode
         </Button>
       </div>
-      <div className='w-full h-full col-span-12 row-span-11'>
+      <div className='w-full h-full col-span-12 row-span-11 overflow-y-scroll'>
         {renderContent()}
       </div>
     </div>

@@ -59,7 +59,7 @@ const GitHubRepoAnalysis = () => {
   const chartHeight = labels.length * 30; // Adjust this multiplier to fit your needs
 
   return (
-    <div className='w-[80%] mx-auto  flex flex-col items-center' style={{ height: chartHeight }}>
+    <div className='sm:w-[80%] w-full mx-auto h-full flex flex-col items-center' style={{ height: chartHeight }}>
       <div className='text-[15px] text-gray-400'>Repos %</div>
       <Bar data={data} options={options} />
     </div>
