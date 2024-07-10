@@ -5,6 +5,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FaLinkedinIn } from "react-icons/fa6";
 import myphoto1 from '../../assets/images/myphoto1.png';
+import myBg from '../../assets/images/myBg.jpg'
 
 function PhotoSection() {
   return (
@@ -13,15 +14,15 @@ function PhotoSection() {
        
        <EmailOutlinedIcon fontSize='medium'/>
         </button>
-        <div className="profile-pic flex justify-center items-center ">
-        <img src={myphoto1} alt="" />
-            
-        </div>
+        <div className={`profile-pic flex justify-center items-center`} >
+    <img src={myphoto1} alt="Profile" />
+</div>
+
         <div className="bottom px-auto  ">
             <div className="content h-[50%] m-auto  flex flex-col justify-center items-center text-white/0 duration-[1s]">
                 
                 <div className="lg:text-[20px] md:text-[16px] lg:font-bold md:font-bold sm:font-medium">VISHAL KUSHWAHA</div>
-                <div className="lg:text-[14px] md:text-[12px] lg:font-bold md:font-bold sm:font-medium">fronted developer</div>
+                <div className="lg:text-[14px] md:text-[12px] lg:font-bold md:font-bold sm:font-medium">Frontend Developer</div>
                
             </div>
            <div className="bottom-bottom lg:bottom-2 xl:bottom-3 2xl:bottom-5 md-bottom-10 sm:bottom-5 bottom-3  w-full  m-auto">
