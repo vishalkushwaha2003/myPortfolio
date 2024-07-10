@@ -4,6 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FaLinkedinIn } from "react-icons/fa6";
+import myphoto1 from '../../assets/images/myphoto1.png';
 
 function PhotoSection() {
   return (
@@ -12,17 +13,9 @@ function PhotoSection() {
        
        <EmailOutlinedIcon fontSize='medium'/>
         </button>
-        <div className="profile-pic">
+        <div className="profile-pic flex justify-center items-center ">
+        <img src={myphoto1} alt="" />
             
-            <svg version="1.1" id="svg2" width="666.66669" height="666.66669" viewBox="0 0 666.66669 666.66669" xmlns="http://www.w3.org/2000/svg">
-                <defs id="defs6">
-                    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath408">
-                        <path d="m 699.926,0 h 3600.16 V 4818.31 H 699.926 Z" id="path406"></path>
-                    </clipPath>
-                </defs>
-                
-              
-            </svg>
         </div>
         <div className="bottom px-auto  ">
             <div className="content h-[50%] m-auto  flex flex-col justify-center items-center text-white/0 duration-[1s]">
