@@ -12,7 +12,7 @@ function MainContent() {
         <div className="h-full w-[100%]   sm:h-full  sm:w-[40%] md:w-[40%] md:h-full lg:w-full lg:h-[50%]">
           <PhotoSection />
         </div>
-        <div className="bg-slate-600 h-0 w-0 sm:h-full sm:w-[60%] md:w-[60%] md:h-full lg:h-[50%] lg:w-full"></div>
+        <div className="border-[0.5px] rounded-3xl border-[rgb(251,185,182)] hover:shadow-[0px_0px_15px_2px_rgba(241,176,176,0.6)] duration-300 border-h-0 w-0 sm:h-full sm:w-[60%] md:w-[60%] md:h-full lg:h-[50%] lg:w-full"></div>
       </div>
       <div className=" h-[100vh] w-full sm:w-full sm:h-[60vh] md:h-[60vh] md:w-full lg:w-[75%] lg:h-full">
         <Sidebar />
