@@ -8,6 +8,12 @@ import myphoto1 from '../../assets/images/myphoto1.png';
 import myBg from '../../assets/images/myBg.jpg'
 
 function PhotoSection() {
+
+
+  const phoneNumber = '6388882098';
+  const message = 'Hello! I would like to chat with you.'; 
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
     <div className="card ">
         <button className="mail text-[rgb(251,185,182)] hover:text-[#e16861] duration-100 hover:scale-125">
@@ -27,10 +33,10 @@ function PhotoSection() {
             </div>
            <div className="bottom-bottom lg:bottom-2 xl:bottom-3 2xl:bottom-5 md-bottom-10 sm:bottom-5 bottom-3  w-full  m-auto">
             <div className=" social-links-container  flex justify-evenly  w-full">
-                 <InstagramIcon fontSize='large' className='hover:cursor-pointer'/>
-                 <GitHubIcon fontSize='large'className='hover:cursor-pointer' />
-                 <FaLinkedinIn className='lg:w-[20px] md:[17px] hover:cursor-pointer'/>
-                 <WhatsAppIcon fontSize='large' className='hover:cursor-pointer'/>
+                 <a href="https://www.instagram.com/invites/contact/?igsh=1t0u2fwybrafd&utm_content=iuyt0dn"><InstagramIcon fontSize='large' className='hover:cursor-pointer'/></a>
+                 <a href="https://github.com/vishalkushwaha2003"><GitHubIcon fontSize='large'className='hover:cursor-pointer' /></a>
+                 <a href="https://www.linkedin.com/in/vishal-kushwaha-947364249/"><FaLinkedinIn className='lg:w-[20px] md:[17px] hover:cursor-pointer'/></a>
+                 <a href={whatsappUrl}><WhatsAppIcon fontSize='large' className='hover:cursor-pointer'/></a>
             </div>
             
            </div>
