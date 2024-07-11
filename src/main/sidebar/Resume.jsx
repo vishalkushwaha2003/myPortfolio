@@ -14,7 +14,7 @@ function Resume() {
         <BarChart />
       </div>
       <div className="sm:col-span-2 col-span-1 sm:row-span-2  row-span-2 flex justify-center items-center">
-      <a  href='https://drive.google.com/file/d/1Lvil80UU-iFYbE89Uo2B1RSZ0O7aH9sq/view?usp=drive_link' target="_blank">
+      <a  href='https://drive.google.com/file/d/1W2evKObH1H1Q8Sa--wgvDAVtVvtBXl_8/view?usp=sharing' target="_blank">
             <button className="resumeButton">See Full Resume</button>
       </a>
       </div>
