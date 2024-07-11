@@ -41,30 +41,8 @@ function Portfolio() {
         >
           All
         </Button>
-        <Button 
-          variant='text' 
-          size='small' 
-          sx={{ 
-            color: 'whitesmoke', 
-            // padding: '5px 15px',
-            minWidth: '180px' // Set fixed width
-          }} 
-          onClick={() => setActiveSection('Web Development')}
-        >
-          Web Development
-        </Button>
-        <Button 
-          variant='text' 
-          size='small' 
-          sx={{ 
-            color: 'whitesmoke', 
-            padding: '5px 15px',
-            minWidth: '180px' // Set fixed width
-          }} 
-          onClick={() => setActiveSection('Chrome Extension')}
-        >
-          Chrome Extension
-        </Button>
+        
+       
         <Button 
           variant='text' 
           size='small' 
@@ -89,6 +67,34 @@ function Portfolio() {
         >
           Leetcode
         </Button>
+
+
+        <Button 
+          variant='text' 
+          size='small' 
+          sx={{ 
+            color: 'whitesmoke', 
+            // padding: '5px 15px',
+            minWidth: '180px' // Set fixed width
+          }} 
+          onClick={() => setActiveSection('Web Development')}
+        >
+          Web Development
+        </Button>
+
+        <Button 
+          variant='text' 
+          size='small' 
+          sx={{ 
+            color: 'whitesmoke', 
+            padding: '5px 15px',
+            minWidth: '180px' // Set fixed width
+          }} 
+          onClick={() => setActiveSection('Chrome Extension')}
+        >
+          Chrome Extension
+        </Button>
+
       </div>
       <div className='w-full h-full col-span-12 row-span-11 overflow-y-scroll'>
         {renderContent()}

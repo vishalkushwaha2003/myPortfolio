@@ -43,16 +43,16 @@ function All() {
    <div>
      
      <div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
-      <div className="animate__animated animate__fadeInLeft">
+      <div className="animate__animated animate__fadeIn">
         <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} />
       </div>
-      <div className="animate__animated animate__fadeInUp">
+      <div className="animate__animated animate__fadeIn">
         <PortfolioChard data={data[1]} handleOpen={() => handleOpen('Activity Tracker')} />
       </div>
-      <div className="animate__animated animate__fadeInUp">
+      <div className="animate__animated animate__fadeIn">
         <PortfolioChard data={data[2]} handleOpen={() => handleOpen('FunQrew')} />
       </div>
-      <div className="animate__animated animate__fadeInRight">
+      <div className="animate__animated animate__fadeIn">
         <PortfolioChard data={data[3]} handleOpen={() => handleOpen('Runner')} />
       </div>
 
@@ -72,16 +72,16 @@ function All() {
 
 
 <div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
-<div className="animate__animated animate__fadeInLeft">
+<div className="animate__animated animate__fadeIn">
   <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} />
 </div>
-<div className="animate__animated animate__fadeInUp">
+<div className="animate__animated animate__fadeIn">
   <PortfolioChard data={data[1]} handleOpen={() => handleOpen('Activity Tracker')} />
 </div>
-<div className="animate__animated animate__fadeInUp">
+<div className="animate__animated animate__fadeIn">
   <PortfolioChard data={data[2]} handleOpen={() => handleOpen('FunQrew')} />
 </div>
-<div className="animate__animated animate__fadeInRight">
+<div className="animate__animated animate__fadeIn">
   <PortfolioChard data={data[3]} handleOpen={() => handleOpen('Runner')} />
 </div>
 
