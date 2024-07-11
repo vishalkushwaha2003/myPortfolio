@@ -10,7 +10,7 @@ import myBg from '../../assets/images/myBg.jpg'
 function PhotoSection() {
 
 
-  const phoneNumber = '9219111208';
+  const phoneNumber = '7307767614';
   const message = 'Hello! I would like to chat with you.'; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -33,7 +33,7 @@ function PhotoSection() {
             </div>
            <div className="bottom-bottom lg:bottom-2 xl:bottom-3 2xl:bottom-5 md-bottom-10 sm:bottom-5 bottom-3  w-full  m-auto">
             <div className=" social-links-container  flex justify-evenly  w-full">
-                 <a href="https://www.instagram.com/invites/contact/?igsh=1t0u2fwybrafd&utm_content=iuyt0dn"><InstagramIcon fontSize='large' className='hover:cursor-pointer'/></a>
+                 <a href="https://www.instagram.com/vishal_jnv/"><InstagramIcon fontSize='large' className='hover:cursor-pointer'/></a>
                  <a href="https://github.com/vishalkushwaha2003"><GitHubIcon fontSize='large'className='hover:cursor-pointer' /></a>
                  <a href="https://www.linkedin.com/in/vishal-kushwaha-947364249/"><FaLinkedinIn className='lg:w-[20px] md:[17px] hover:cursor-pointer'/></a>
                  <a href={whatsappUrl}><WhatsAppIcon fontSize='large' className='hover:cursor-pointer'/></a>
