@@ -33,7 +33,7 @@ function AboutCard() {
 
       <div data-text="AWS" style={{ "--r": "25" }} className="glass hover:cursor-pointer hover:border-[1px] hover:border-[#fbb9b6]">
         <img src={aboutImage1} alt="" />
-        <span>Proficient in AWS EC2 deployment, managing scalable and secure cloud applications.</span>
+        <span>Proficient in AWS EC2 deployment, make scalable and secure applications.</span>
       </div>
     </div>
   );
