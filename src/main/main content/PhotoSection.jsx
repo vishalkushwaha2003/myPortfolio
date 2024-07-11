@@ -10,7 +10,7 @@ import myBg from '../../assets/images/myBg.jpg'
 function PhotoSection() {
 
 
-  const phoneNumber = '8052385186';
+  const phoneNumber = '+91 8052385186';
   const message = 'Hii 👋! vishal \n Please let me know a convenient time for you to have a conversation?'; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
