@@ -33,10 +33,10 @@ function PhotoSection() {
             </div>
            <div className="bottom-bottom lg:bottom-2 xl:bottom-3 2xl:bottom-5 md-bottom-10 sm:bottom-5 bottom-3  w-full  m-auto">
             <div className=" social-links-container  flex justify-evenly  w-full">
-                 <a href="https://www.instagram.com/vishal_jnv/"><InstagramIcon fontSize='large' className='hover:cursor-pointer'/></a>
-                 <a href="https://github.com/vishalkushwaha2003"><GitHubIcon fontSize='large'className='hover:cursor-pointer' /></a>
-                 <a href="https://www.linkedin.com/in/vishal-kushwaha-947364249/"><FaLinkedinIn className='lg:w-[20px] md:[17px] hover:cursor-pointer'/></a>
-                 <a href={whatsappUrl}><WhatsAppIcon fontSize='large' className='hover:cursor-pointer'/></a>
+                 <a href="https://www.instagram.com/vishal_jnv/" target="_blank" rel="noopener noreferrer"><InstagramIcon fontSize='large' className='hover:cursor-pointer'/></a>
+                 <a href="https://github.com/vishalkushwaha2003" target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize='large'className='hover:cursor-pointer' /></a>
+                 <a href="https://www.linkedin.com/in/vishal-kushwaha-947364249/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className='lg:w-[20px] md:[17px] hover:cursor-pointer'/></a>
+                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" ><WhatsAppIcon fontSize='large' className='hover:cursor-pointer'/></a>
             </div>
             
            </div>
