@@ -8,9 +8,13 @@ import ChatAppBackdrop from "./ChatAppBackdrop";
 import ActivityTrackerBackdrop from "./ActivityTrackerBackdrop";
 import FunQrewBackdrop from "./FunQrewBackdrop";
 import RunnerBackdrop from "./RunnerBackdrop";
+import NetflexBackdrop from "./NetflexBackdrop";
+import ErpPortalBackdrop from "./ErpPortalBackdrop";
+import BookAllocationBackdrop from "./BookAllocationBackdrop";
+import MusicAppBackdrop from "./MusicAppBackdrop";
 
 function All() {
-  const data = ["chat App", "Activity Tracker", "FunQrew", "Runner"];
+  const data = ["chat App", "Activity Tracker", "FunQrew", "Runner","Netflex","ERP portal","Book Allocation","Music App"];
   const [open, setOpen] = React.useState(false);
   const [selectedComponent, setSelectedComponent] = React.useState(null);
 
@@ -34,6 +38,14 @@ function All() {
         return <FunQrewBackdrop />;
       case 'Runner':
         return <RunnerBackdrop />;
+      case 'Netflex':
+        return <NetflexBackdrop/>; 
+      case 'ERP portal':
+        return <ErpPortalBackdrop />; 
+      case 'Book Allocation':
+        return <BookAllocationBackdrop />;
+      case 'Music App':
+        return <MusicAppBackdrop />;    
       default:
         return null;
     }
@@ -44,16 +56,16 @@ function All() {
      
      <div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
       <div className="animate__animated animate__fadeIn">
-        <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} />
+        <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} linkdin={'https://www.linkedin.com/in/vishal-kushwaha-947364249/'} GitHub={'https://github.com/vishalkushwaha2003/Chatting-app'}/>
       </div>
       <div className="animate__animated animate__fadeIn">
-        <PortfolioChard data={data[1]} handleOpen={() => handleOpen('Activity Tracker')} />
+        <PortfolioChard data={data[1]} handleOpen={() => handleOpen('Activity Tracker')} linkdin={'https://www.linkedin.com/feed/update/urn:li:activity:7207322850955862016/'} GitHub={'https://github.com/vishalkushwaha2003/ActivityTrackerExtension'}/>
       </div>
       <div className="animate__animated animate__fadeIn">
-        <PortfolioChard data={data[2]} handleOpen={() => handleOpen('FunQrew')} />
+        <PortfolioChard data={data[2]} handleOpen={() => handleOpen('FunQrew')} linkdin={'https://www.linkedin.com/in/vishal-kushwaha-947364249/'} GitHub={'https://github.com/vishalkushwaha2003'}/>
       </div>
       <div className="animate__animated animate__fadeIn">
-        <PortfolioChard data={data[3]} handleOpen={() => handleOpen('Runner')} />
+        <PortfolioChard data={data[3]} handleOpen={() => handleOpen('Runner')} linkdin={'https://www.linkedin.com/in/vishal-kushwaha-947364249/'} GitHub={'https://github.com/vishalkushwaha2003/runner'} />
       </div>
 
       <Backdrop
@@ -73,16 +85,16 @@ function All() {
 
 <div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
 <div className="animate__animated animate__fadeIn">
-  <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} />
+  <PortfolioChard data={data[4]} handleOpen={() => handleOpen('Netflex')} linkdin={'https://www.linkedin.com/in/vishal-kushwaha-947364249/'} GitHub={'https://github.com/vishalkushwaha2003/Movies-world'}/>
 </div>
 <div className="animate__animated animate__fadeIn">
-  <PortfolioChard data={data[1]} handleOpen={() => handleOpen('Activity Tracker')} />
+  <PortfolioChard data={data[5]} handleOpen={() => handleOpen('ERP portal')} linkdin={'https://www.linkedin.com/in/vishal-kushwaha-947364249/'} GitHub={'https://github.com/vishalkushwaha2003'}/>
 </div>
 <div className="animate__animated animate__fadeIn">
-  <PortfolioChard data={data[2]} handleOpen={() => handleOpen('FunQrew')} />
+  <PortfolioChard data={data[6]} handleOpen={() => handleOpen('Book Allocation')} linkdin={'https://www.linkedin.com/in/vishal-kushwaha-947364249/'} GitHub={'https://github.com/vishalkushwaha2003/Book-store'} />
 </div>
 <div className="animate__animated animate__fadeIn">
-  <PortfolioChard data={data[3]} handleOpen={() => handleOpen('Runner')} />
+  <PortfolioChard data={data[7]} handleOpen={() => handleOpen('Music App')} linkdin={'https://www.linkedin.com/in/vishal-kushwaha-947364249/'} GitHub={'https://github.com/vishalkushwaha2003'}/>
 </div>
 
 <Backdrop
