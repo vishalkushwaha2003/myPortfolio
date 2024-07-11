@@ -40,7 +40,9 @@ function All() {
   };
 
   return (
-    <div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
+   <div>
+     
+     <div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
       <div className="animate__animated animate__fadeInLeft">
         <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} />
       </div>
@@ -67,6 +69,38 @@ function All() {
         {renderComponent()}
       </Backdrop>
     </div>
+
+
+<div className="w-full h-auto p-5 gap-5 justify-evenly flex items-center  overflow-x-scroll">
+<div className="animate__animated animate__fadeInLeft">
+  <PortfolioChard data={data[0]} handleOpen={() => handleOpen('chat App')} />
+</div>
+<div className="animate__animated animate__fadeInUp">
+  <PortfolioChard data={data[1]} handleOpen={() => handleOpen('Activity Tracker')} />
+</div>
+<div className="animate__animated animate__fadeInUp">
+  <PortfolioChard data={data[2]} handleOpen={() => handleOpen('FunQrew')} />
+</div>
+<div className="animate__animated animate__fadeInRight">
+  <PortfolioChard data={data[3]} handleOpen={() => handleOpen('Runner')} />
+</div>
+
+<Backdrop
+  sx={{
+    color: '#fff',
+    zIndex: (theme) => theme.zIndex.drawer + 1,
+    backdropFilter: 'blur(4px)',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)'
+  }}
+  open={open}
+  onClick={handleClose}
+>
+  {renderComponent()}
+</Backdrop>
+</div>
+
+   </div>
+
   );
 }
 
