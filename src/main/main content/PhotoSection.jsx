@@ -11,14 +11,20 @@ function PhotoSection() {
 
 
   const phoneNumber = '8052385186';
-  const message = 'Hii 👋! vishal'; 
+  const message = 'Hii 👋! vishal \n Please let me know a convenient time for you to have a conversation?'; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+
+  const email = 'vishal2003kushwaha@gmail.com'; 
+  const emailSubject = 'Introducing "your message...."'; 
+  const emailBody = 'I hope this email finds you well. My name is [Your Name].\n  "type your message......"   \n  \nPlease let me know a convenient time for you to have a conversation. \n \n Best regards,\n [Your Name] \n [Your Contact Information] '; 
+  const emailUrl = `mailto:${email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 
   return (
     <div className="card ">
         <button className="mail text-[rgb(251,185,182)] hover:text-[#e16861] duration-100 hover:scale-125">
        
-       <EmailOutlinedIcon fontSize='medium'/>
+       <a href={emailUrl} target="_blank" rel="noopener noreferrer"> <EmailOutlinedIcon fontSize='medium'/></a>
         </button>
         <div className={`profile-pic flex justify-center items-center`} >
     <img src={myphoto1} alt="Profile" />
