@@ -2,11 +2,7 @@ import React from "react";
 import aboutImage1 from '../../assets/images/icon-design.svg'
 import aboutImage2 from '../../assets/images/icon-dev.svg'
 
-import aboutImage3 from '../../assets/images/chrome.svg'
 
-import aboutImage4 from '../../assets/images/icon-design.svg'
-
-import aboutImage5 from '../../assets/images/icon-design.svg'
 
 
 function AboutCard() {
