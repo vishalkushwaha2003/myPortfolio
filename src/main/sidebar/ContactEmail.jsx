@@ -45,11 +45,12 @@ function ContactEmail() {
       alert('Failed to send email.');
     }
   };
-
+   
   return (
-    <div className="form-container px-10 py-5">
-      <form className="form" onSubmit={handleSubmit}>
+    <div className="form-container px-10 py-5   ">
+      <form className="form animate__animated animate__fadeIn" onSubmit={handleSubmit} >
         <div className="form-group text-sm sm:text-md lg:text-lg">
+          
           <label htmlFor="name">Full Name</label>
           <input
             required

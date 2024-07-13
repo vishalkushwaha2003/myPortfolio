@@ -27,7 +27,7 @@ function PhotoSection() {
        <a href={emailUrl} target="_blank" rel="noopener noreferrer"> <EmailOutlinedIcon fontSize='medium'/></a>
         </button>
         <div className={`profile-pic flex justify-center items-center pt-2 sm:pt-4 bg-gradient-to-tr hover:bg-gradient-to-tl from-transparent to-[rgba(251,185,182,0.25)]  `} >
-    <img src={myphoto1} alt="Profile" />
+    <img src={myphoto1} alt="Profile" className='animate__animated animate__fadeIn'/>
 </div>
 
         <div className="bottom px-auto  ">
