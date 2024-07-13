@@ -5,7 +5,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FaLinkedinIn } from "react-icons/fa6";
 import myphoto1 from '../../assets/images/myphoto1.png';
-import myBg from '../../assets/images/myBg.jpg'
+
 
 function PhotoSection() {
 
@@ -26,7 +26,7 @@ function PhotoSection() {
        
        <a href={emailUrl} target="_blank" rel="noopener noreferrer"> <EmailOutlinedIcon fontSize='medium'/></a>
         </button>
-        <div className={`profile-pic flex justify-center items-center`} >
+        <div className={`profile-pic flex justify-center items-center pt-2 sm:pt-4`} >
     <img src={myphoto1} alt="Profile" />
 </div>
 
