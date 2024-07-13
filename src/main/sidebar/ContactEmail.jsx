@@ -31,17 +31,17 @@ function ContactEmail() {
       });
 
       if (response.ok) {
-        alert('Email sent successfully!');
+        alert('🥳✅ your message send successfully!');
         setFormData({
           name: '',
           email: '',
           message: '',
         });
       } else {
-        alert('Failed to send email.');
+        alert('😟❌Failed to send message.');
       }
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('❌Error sending message:', error);
       alert('Failed to send email.');
     }
   };
