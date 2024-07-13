@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ContactForm = () => {
+function ContactEmail() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,7 +23,11 @@ const ContactForm = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
       });
 
       if (response.ok) {
@@ -43,55 +47,50 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full w-full bg-transparent">
-      <form onSubmit={handleSubmit} className="bg-transparent p-8 rounded  w-[80%] ">
-        
-        <div className="w-[50%] m-auto">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">Full Name:</label>
+    <div className="form-container px-10 py-5">
+      <form className="form" onSubmit={handleSubmit}>
+        <div className="form-group text-sm sm:text-md lg:text-lg">
+          <label htmlFor="name">Full Name</label>
           <input
-            type="text"
-            id="name"
+            required
             name="name"
+            id="name"
+            type="text"
             value={formData.name}
             onChange={handleChange}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
-        <div className="w-[50%] m-auto">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">Email:</label>
+        <div className="form-group text-sm sm:text-md lg:text-lg">
+          <label htmlFor="email">Email</label>
           <input
-            type="email"
-            id="email"
+            required
             name="email"
+            id="email"
+            type="email"
             value={formData.email}
             onChange={handleChange}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
-        <div className="w-[50%] m-auto">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">Message:</label>
+        <div className="form-group text-sm sm:text-md lg:text-lg">
+          <label htmlFor="message">How Can We Help You?</label>
           <textarea
+            required
+            cols="50"
+            rows="10"
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32"
-          />
+          ></textarea>
         </div>
-        <div className='px-auto '> 
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline "
-        >
-          Submit
-        </button>
+        <div className="flex justify-center">
+          <button type="submit" className="form-submit-btn text-sm sm:text-lg lg:text-xl">
+            Submit
+          </button>
         </div>
       </form>
     </div>
   );
-};
+}
 
-export default ContactForm;
+export default ContactEmail;
