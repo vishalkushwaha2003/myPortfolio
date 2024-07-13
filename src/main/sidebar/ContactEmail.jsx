@@ -73,7 +73,7 @@ function ContactEmail() {
           />
         </div>
         <div className="form-group text-sm sm:text-md lg:text-lg">
-          <label htmlFor="message">How Can We Help You?</label>
+          <label htmlFor="message">Type your message</label>
           <textarea
             required
             cols="50"
