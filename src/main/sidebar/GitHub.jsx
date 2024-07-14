@@ -6,6 +6,8 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import GitHubActivityBox from './GitHubActivityBox';
 import GitHubRepoAnalysis from './GitHubRepoAnalysis';
+import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined';
+
 
 
 const GitHub = () => {
@@ -49,7 +51,7 @@ const GitHub = () => {
                     <img src={data.avatar_url} alt="avatar" className='md:h-[100%] sm:h-[70%] h-[100%]  rounded-full animate__animated animate__fadeInRight' />
              </div>
              <div className='sm:col-span-7 col-span-1 sm:row-span-1  row-span-5 flex flex-col justify-center items-center overflow-hidden '>
-                   <div className='text-[25px] font-bold text-white animate__animated animate__fadeInLeft'>{data.name}</div>
+             <a href="https://github.com/vishalkushwaha2003" target='_blank' className=''><div className='text-[25px] font-bold hover:text-blue-700 text-white animate__animated animate__fadeInLeft'>{data.name} <OpenInNewOutlinedIcon fontSize='small'/></div></a>
                    <div className='text-[15px] text-gray-400 animate__animated animate__fadeInLeft'>{data.login}</div>
                    <div className='flex gap-3 animate__animated animate__fadeInLeft'>
                    <div className='text-[15px] text-gray-400'> <GroupOutlinedIcon/> followers { data.followers} ,</div>

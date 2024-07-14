@@ -1,13 +1,15 @@
 
 // src/FetchData.js
+//this is temperary the correct code coming soon.
 import React, { useState, useEffect } from 'react';
 import Skeleton from './SkeletonLoading';
 import RepoInfo from './RepoInfo';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import GitHubActivityBox from './GitHubActivityBox';
-
+import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
 import DoughnutChartLeetcode from './DoughnutChartLeetcode';
+import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined';
 
 
 const Leetcode = () => {
@@ -51,11 +53,11 @@ const Leetcode = () => {
                     <img src={data.avatar_url} alt="avatar" className='md:h-[100%] sm:h-[70%] h-[100%]  rounded-full animate__animated animate__fadeInRight' />
              </div>
              <div className='sm:col-span-7 col-span-1 sm:row-span-1  row-span-5 flex flex-col justify-center items-center overflow-hidden '>
-                   <div className='text-[25px] font-bold text-white animate__animated animate__fadeInLeft'>{data.name}</div>
+                   <a href="https://leetcode.com/u/vishalkushwaha2003/" target='_blank' className=''><div className='text-[25px] font-bold hover:text-blue-700 text-white animate__animated animate__fadeInLeft'>{data.name} <OpenInNewOutlinedIcon fontSize='small'/></div></a>
                    <div className='text-[15px] text-gray-400 animate__animated animate__fadeInLeft'>{data.login}</div>
                    <div className='flex gap-3 animate__animated animate__fadeInLeft'>
-                   <div className='text-[15px] text-gray-400'> <GroupOutlinedIcon/> followers { data.followers} ,</div>
-                   <div className='text-[15px] text-gray-400'>following { data.following}</div>
+                   <div className='text-[15px] text-gray-400'> <RocketLaunchOutlinedIcon/> Rank 747835 ,</div>
+                   <div className='text-[15px] text-gray-400'>Submissions 331</div>
                    </div>
                    <div className='text-[15px] text-gray-400 animate__animated animate__fadeInLeft'><EmailOutlinedIcon/> vishalkushwaha2003@gmail.com</div>
 
@@ -78,3 +80,7 @@ const Leetcode = () => {
 };
 
 export default Leetcode;
+
+
+
+
