@@ -94,7 +94,7 @@ export default function Timeliner() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="rgba(251, 185, 182,0.5)">
-          2021-2022
+          2021-2025
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
