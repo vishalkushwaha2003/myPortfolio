@@ -4,8 +4,8 @@ import AboutCard from "./AboutCard";
 
 function About() {
   return (
-    <div className="h-full w-full grid grid-cols-12 grid-rows-12 gap-1">
-      <div className="h-fll w-full col-span-12 row-span-6 flex flex-col px-4 sm:px-10 justify-center items-center  space-y-2 py-2  ">
+    <div className="h-full w-full grid grid-cols-12 grid-rows-12 gap-1  ">
+      <div className="h-fll w-full col-span-12 row-span-6 flex flex-col px-4 sm:px-10 justify-center items-center  space-y-2 py-2 overflow-y-scroll ">
        
       <div className="flex flex-col space-y-2 ">
         <div className="text-[30px] font-bold text-[rgba(255,255,255,0.8)] animate__animated animate__bounceInDown">
