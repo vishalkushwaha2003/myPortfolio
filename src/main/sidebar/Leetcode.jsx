@@ -5,11 +5,11 @@ import React, { useState, useEffect } from 'react';
 import Skeleton from './SkeletonLoading';
 import RepoInfo from './RepoInfo';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
-import GitHubActivityBox from './GitHubActivityBox';
+
 import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
 import DoughnutChartLeetcode from './DoughnutChartLeetcode';
 import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined';
+import LeetcodeActivityBox from './LeetCodeActivityBox';
 
 
 const Leetcode = () => {
@@ -68,7 +68,7 @@ const Leetcode = () => {
         
         </div>}
         <div className='h-[20vh] sm:h-full w-full p-[2px]  rounded-[5px] overflow-scroll'>
-        <GitHubActivityBox/>
+        <LeetcodeActivityBox/>
         </div>
         <div className='w-full sm:h-full h-[30vh]   '>
           
