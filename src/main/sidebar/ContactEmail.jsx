@@ -47,8 +47,8 @@ function ContactEmail() {
   };
    
   return (
-    <div className="form-container px-10 py-5   ">
-      <form className="form animate__animated animate__fadeIn" onSubmit={handleSubmit} >
+    <div className="form-container px-10 py-5 w-[80%]  h-auto m-auto ">
+      <form className="form animate__animated animate__fadeIn " onSubmit={handleSubmit} >
         <div className="form-group text-sm sm:text-md lg:text-lg">
           
           <label htmlFor="name">Full Name</label>

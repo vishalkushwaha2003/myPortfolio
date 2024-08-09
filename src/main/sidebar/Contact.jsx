@@ -8,7 +8,7 @@ import ContactEmail from './ContactEmail'
 function Contact() {
   return (
    
-   <div className='w-full h-full  flex justify-center items-center'>
+   <div className='w-full h-full md:h-[70%] flex justify-center items-center'>
      <ContactEmail/>
    </div>
   )
