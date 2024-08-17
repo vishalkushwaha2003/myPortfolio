@@ -48,7 +48,7 @@ const GitHub = () => {
     <div className='pt-2 flex flex-col gap-3 sm:grid sm:grid-cols-1 sm:grid-rows-3 w-full sm:px-5 sm:h-full h-[120vh]'>
         {data && <div className=' h-[40vh] sm:h-full grid sm:grid-cols-12 grid-cols-1 sm:grid-rows-1 grid-rows-12 sm:w-[80%] w-[98%] rounded-[15px] border-slate-600 border-[0.5px] gap-3 mx-auto'>
              <div className='sm:col-span-3 col-span-1  sm:row-span-1 row-span-4  flex justify-center items-center sm:p-5 pt-2 overflow-hidden'>
-                    <img src={data.avatar_url} alt="avatar" className='md:h-[100%] sm:h-[70%] h-[100%]  rounded-full animate__animated animate__fadeInRight' />
+                    <img src={data.avatar_url} alt="avatar" className='md:h-[100%] sm:h-[70%] h-[100%]  rounded-full animate__animated animate__fadeInRight border border-slate-500/50' />
              </div>
              <div className='sm:col-span-7 col-span-1 sm:row-span-1  row-span-5 flex flex-col justify-center items-center overflow-hidden '>
              <a href="https://github.com/vishalkushwaha2003" target='_blank' className=''><div className='text-[25px] font-bold hover:text-blue-700 text-white animate__animated animate__fadeInLeft'>{data.name} <OpenInNewOutlinedIcon fontSize='small'/></div></a>
